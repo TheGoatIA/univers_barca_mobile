@@ -1,0 +1,135 @@
+- name: "bug"
+  color: d73a4a
+  description: "Quelque chose ne fonctionne pas"
+
+- name: "enhancement"
+  color: a2eeef
+  description: "Nouvelle fonctionnalité ou amélioration"
+
+- name: "documentation"
+  color: 0075ca
+  description: "Améliorations ou ajouts à la documentation"
+
+- name: "duplicate"
+  color: cfd3d7
+  description: "Ce ticket ou cette Pull Request existe déjà"
+
+- name: "help wanted"
+  color: 008672
+  description: "Une attention particulière est nécessaire"
+
+- name: "good first issue"
+  color: 7057ff
+  description: "Idéal pour les nouveaux contributeurs"
+
+- name: "invalid"
+  color: e4e669
+  description: "Cela ne semble pas correct"
+
+- name: "question"
+  color: d876e3
+  description: "Informations supplémentaires demandées"
+
+- name: "wontfix"
+  color: ffffff
+  description: "Ne sera pas traité"
+
+- name: "refactor"
+  color: e99695
+  description: "Changement de code sans correction de bug ni ajout de fonctionnalité"
+
+- name: "maintenance"
+  color: f9d0c4
+  description: "Tâches de maintenance générale"
+
+- name: "performance"
+  color: fef2c0
+  description: "Optimisation des performances"
+
+- name: "security"
+  color: e11d21
+  description: "Correction ou rapport de faille de sécurité"
+
+- name: "triage"
+  color: c5def5
+  description: "Nouveaux tickets en attente de revue"
+
+- name: "high-priority"
+  color: e11d21
+  description: "Éléments critiques nécessitant une attention immédiate"
+
+- name: "dependabot"
+  color: 0366d6
+  description: "Mise à jour automatique de dépendance"
+
+- name: "dependencies"
+  color: 0366d6
+  description: "Mise à jour de dépendances"
+
+- name: "backend"
+  color: 1d76db
+  description: "Concerne l'API Backend"
+
+- name: "admin"
+  color: 5319e7
+  description: "Concerne l'application d'administration"
+
+- name: "flutter"
+  color: 02569b
+  description: "Concerne l'application mobile Flutter"
+
+- name: "docker"
+  color: 0db7ed
+  description: "Concerne Docker / conteneurs"
+
+- name: "ci-cd"
+  color: fbca04
+  description: "Concerne l'intégration et le déploiement continus"
+
+- name: "tests"
+  color: bfd4f2
+  description: "Tests unitaires, d'intégration, de non-régression"
+
+- name: "i18n"
+  color: c2e0c6
+  description: "Internationalisation (FR / EN / ES)"
+
+- name: "ux-ui"
+  color: f7c6c7
+  description: "Design, ergonomie, accessibilité"
+
+- name: "rgpd"
+  color: b60205
+  description: "Données personnelles et conformité RGPD"
+
+- name: "module:ia"
+  color: 7fdbca
+  description: "Assistant IA, wallpapers, génération"
+
+- name: "module:jeux"
+  color: ffd8b1
+  description: "Guess the Player, Quiz"
+
+- name: "module:fantasy"
+  color: c7e9b4
+  description: "Fantasy Barça, La Masia Academy"
+
+- name: "module:communaute"
+  color: bcf5bc
+  description: "Carte communautaire, groupes, modération"
+
+- name: "module:calendrier"
+  color: d4c5f9
+  description: "Calendrier et export agenda"
+
+- name: "breaking-change"
+  color: b60205
+  description: "Changement incompatible avec la version précédente"
+
+- name: "release"
+  color: 0e8a16
+  description: "Mise en production / version"
+
+- name: "wip"
+  color: ededed
+  description: "Travail en cours, ne pas fusionner"

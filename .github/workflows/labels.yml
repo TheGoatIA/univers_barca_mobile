@@ -1,0 +1,24 @@
+name: Synchronisation des labels
+
+on:
+  push:
+    branches: [main, dev]
+    paths:
+      - ".github/labels.yml"
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  contents: read
+
+jobs:
+  labels:
+    name: Synchroniser les labels
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: micnncim/action-label-syncer@v1.3.0
+        with:
+          manifest: .github/labels.yml
+          token: ${{ secrets.GITHUB_TOKEN }}
+          prune: false

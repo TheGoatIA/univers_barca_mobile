@@ -1,0 +1,23 @@
+Copyright (c) 2026 Univers Barça — TheGoatIA. Tous droits réservés.
+
+LICENCE PROPRIÉTAIRE — USAGE INTERNE
+
+Ce logiciel, son code source, sa documentation et ses éléments graphiques
+(ci-après « le Logiciel ») sont la propriété exclusive de leurs auteurs.
+Aucune licence, expresse ou implicite, n'est accordée sur le Logiciel, sauf
+autorisation écrite préalable du titulaire des droits.
+
+Il est notamment interdit, sans cette autorisation :
+  1. de copier, modifier, fusionner, publier ou distribuer tout ou partie du Logiciel ;
+  2. de sous-licencier, vendre ou louer le Logiciel ;
+  3. de réutiliser l'identité visuelle d'Univers Barça (emblème, wordmark, illustrations).
+
+Univers Barça est une application communautaire non officielle, sans lien avec le
+FC Barcelone. Aucune marque déposée du club n'est utilisée ou concédée.
+
+Les dépendances tierces restent soumises à leurs licences respectives
+(voir THIRD_PARTY_LICENSES.md, généré par « npm run licenses » / « make licenses »).
+
+LE LOGICIEL EST FOURNI « EN L'ÉTAT », SANS GARANTIE D'AUCUNE SORTE, EXPRESSE OU
+IMPLICITE, Y COMPRIS, SANS LIMITATION, LES GARANTIES DE QUALITÉ MARCHANDE,
+D'ADÉQUATION À UN USAGE PARTICULIER ET D'ABSENCE DE CONTREFAÇON.

@@ -1,0 +1,13 @@
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.ico binary
+*.woff2 binary
+*.keystore binary
+*.jks binary
+package-lock.json -diff linguist-generated=true
+pubspec.lock linguist-generated=true
+*.g.dart linguist-generated=true
+*.freezed.dart linguist-generated=true

@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 🔒 Signaler une faille de sécurité
+    url: https://github.com/TheGoatIA/univers_barca_mobile/security/advisories/new
+    about: Merci de ne PAS ouvrir de ticket public pour une vulnérabilité. Utilisez le signalement privé.
+  - name: 📖 Documentation du projet
+    url: https://github.com/TheGoatIA/univers_barca_mobile#readme
+    about: Consultez d'abord le README, ARCHITECTURE.md et CONTRIBUTING.md.
