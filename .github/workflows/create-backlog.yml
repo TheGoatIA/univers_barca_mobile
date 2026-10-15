@@ -3,6 +3,10 @@ name: Créer le backlog (issues détaillées)
 # Création idempotente des issues décrites dans .github/backlog/ (étiquettes, jalons, issues, épopées).
 # Relançable à volonté : les issues déjà créées (identifiées par leur code entre crochets) sont ignorées.
 on:
+  # Déclenchement automatique : modifier .github/backlog/run.json (options ci-dessous) puis pousser sur main
+  push:
+    branches: [main]
+    paths: ['.github/backlog/run.json']
   workflow_dispatch:
     inputs:
       dry_run:
@@ -41,10 +45,17 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
         run: |
+          DRY="${{ inputs.dry_run }}"; ONLY="${{ inputs.only }}"; LIMIT="${{ inputs.limit }}"
+          if [ "${{ github.event_name }}" = "push" ]; then
+            DRY=$(jq -r '.dry_run // false' .github/backlog/run.json)
+            ONLY=$(jq -r '.only // ""' .github/backlog/run.json)
+            LIMIT=$(jq -r '.limit // ""' .github/backlog/run.json)
+          fi
           ARGS=""
-          [ "${{ inputs.dry_run }}" = "true" ] && ARGS="$ARGS --dry-run"
-          [ -n "${{ inputs.only }}" ] && ARGS="$ARGS --only=${{ inputs.only }}"
-          [ -n "${{ inputs.limit }}" ] && ARGS="$ARGS --limit=${{ inputs.limit }}"
+          [ "$DRY" = "true" ] && ARGS="$ARGS --dry-run"
+          [ -n "$ONLY" ] && ARGS="$ARGS --only=$ONLY"
+          [ -n "$LIMIT" ] && ARGS="$ARGS --limit=$LIMIT"
+          echo "Options : $ARGS"
           node .github/backlog/create-backlog.mjs $ARGS
       - uses: actions/upload-artifact@v4
         if: always()
