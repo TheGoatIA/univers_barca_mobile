@@ -8,7 +8,7 @@ Structure inspirée du [gabarit Flutter de l'équipe](https://github.com/BorisGa
 ## Démarrage rapide
 
 ```bash
-# Prérequis : Flutter stable (Dart ≥ 3.9), Android Studio / Xcode
+# Prérequis : Flutter 3.47.7 (stable, Dart ≥ 3.9), Android Studio / Xcode
 make setup                 # flutter pub get + génération de code + hooks git
 cp .env.example .env       # puis adapter API_BASE_URL
 make run-dev               # flutter run --dart-define=APP_ENV=development

@@ -40,6 +40,7 @@ jobs:
           echo "### Version ${VERSION} (${ENV_NAME}) — app ${APP_VERSION}+${{ github.run_number }}" >> "$GITHUB_STEP_SUMMARY"
       - uses: subosito/flutter-action@v2
         with:
+          flutter-version: '3.47.7'
           channel: stable
           cache: true
       - run: flutter pub get
@@ -69,6 +70,7 @@ jobs:
           cache: gradle
       - uses: subosito/flutter-action@v2
         with:
+          flutter-version: '3.47.7'
           channel: stable
           cache: true
       - run: flutter pub get
@@ -131,6 +133,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: subosito/flutter-action@v2
         with:
+          flutter-version: '3.47.7'
           channel: stable
           cache: true
       - run: flutter pub get
@@ -161,8 +164,8 @@ jobs:
           security set-key-partition-list -S apple-tool:,apple: -k "$KEYCHAIN_PASSWORD" "$KC"
           security list-keychain -d user -s "$KC"
           mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles && cp "$PP" ~/Library/MobileDevice/Provisioning\ Profiles/
-          flutter build ipa --release --build-name=${{ needs.verify.outputs.app_version }} --build-number=${{ github.run_number }} \
-            --dart-define=APP_ENV=${ENV_NAME} --export-options-plist=ios/ExportOptions.plist
+          flutter build ipa --release --build-name=${{ needs.verify.outputs.app_version }} --build-number=${{ github.run_number }}\
+            --dart-define=APP_ENV=${ENV_NAME}
       - name: Upload TestFlight
         if: env.IOS_CERT_B64 != ''
         uses: apple-actions/upload-testflight-build@v3
