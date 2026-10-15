@@ -22,7 +22,7 @@ dependencies:
 
   # === INJECTION DE DÉPENDANCES ===
   get_it: ^9.2.0             # Service locator
-  injectable: ^2.7.1+4       # Annotations DI + génération de code
+  injectable: ^3.0.0       # Annotations DI + génération de code
 
   # === RÉSEAU ===
   chopper: ^8.5.1            # Client HTTP + intercepteurs
@@ -31,8 +31,8 @@ dependencies:
   internet_connection_checker: ^3.0.1  # Détection connectivité
 
   # === BASE DE DONNÉES & STOCKAGE LOCAL ===
-  drift: ^2.21.0             # ORM SQLite avec génération de code
-  drift_flutter: ^0.2.7      # Intégration Drift/Flutter
+  drift: ^2.35.2             # ORM SQLite avec génération de code
+  drift_flutter: ^0.3.1      # Intégration Drift/Flutter
   flutter_secure_storage: ^10.0.0  # Stockage chiffré (tokens)
   shared_preferences: ^2.5.4 # Préférences utilisateur simples
 
@@ -121,9 +121,9 @@ dev_dependencies:
   # Pour régénérer : dart run build_runner build --delete-conflicting-outputs
   build_runner: ^2.4.13
   json_serializable: ^6.8.0
-  injectable_generator: ^2.6.2
+  injectable_generator: ^3.1.3
   chopper_generator: ^8.6.1
-  drift_dev: ^2.21.2
+  drift_dev: ^2.35.1
 
   # === TESTS ===
   mocktail: ^1.0.4
