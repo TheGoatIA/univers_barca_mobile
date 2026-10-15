@@ -55,7 +55,7 @@ class _SplashPageState extends State<_SplashPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            const Icon(Icons.shield_outlined, size: 80),
+            Image.asset('assets/images/logo.png', width: 96, height: 96),
             const SizedBox(height: 16),
             Text('UNIVERS BARÇA', style: Theme.of(context).textTheme.headlineSmall),
           ],
