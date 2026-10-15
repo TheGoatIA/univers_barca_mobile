@@ -45,6 +45,13 @@ jobs:
           cache: true
       - run: flutter pub get
       - run: dart format --output=none --set-exit-if-changed --line-length 100 lib/core lib/di lib/features lib/routes lib/main.dart test integration_test
+      - name: Cache build_runner
+        uses: actions/cache@v4
+        with:
+          path: .dart_tool/build
+          key: build-runner-${{ runner.os }}-${{ hashFiles('pubspec.lock') }}-${{ hashFiles('lib/**/*.dart') }}
+          restore-keys: |
+            build-runner-${{ runner.os }}-${{ hashFiles('pubspec.lock') }}-
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: cp .env.example .env
       - run: flutter analyze --fatal-warnings
@@ -74,6 +81,13 @@ jobs:
           channel: stable
           cache: true
       - run: flutter pub get
+      - name: Cache build_runner
+        uses: actions/cache@v4
+        with:
+          path: .dart_tool/build
+          key: build-runner-${{ runner.os }}-${{ hashFiles('pubspec.lock') }}-${{ hashFiles('lib/**/*.dart') }}
+          restore-keys: |
+            build-runner-${{ runner.os }}-${{ hashFiles('pubspec.lock') }}-
       - run: dart run build_runner build --delete-conflicting-outputs
       - name: Fichier .env
         run: |
@@ -137,6 +151,19 @@ jobs:
           channel: stable
           cache: true
       - run: flutter pub get
+      - name: Cache CocoaPods
+        uses: actions/cache@v4
+        with:
+          path: ios/Pods
+          key: pods-${{ runner.os }}-${{ hashFiles('pubspec.lock', 'ios/Podfile') }}
+          restore-keys: pods-${{ runner.os }}-
+      - name: Cache build_runner
+        uses: actions/cache@v4
+        with:
+          path: .dart_tool/build
+          key: build-runner-${{ runner.os }}-${{ hashFiles('pubspec.lock') }}-${{ hashFiles('lib/**/*.dart') }}
+          restore-keys: |
+            build-runner-${{ runner.os }}-${{ hashFiles('pubspec.lock') }}-
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: |
           cp .env.example .env
