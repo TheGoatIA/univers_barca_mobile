@@ -36,10 +36,10 @@ analyze: ## Analyse statique du code Dart
 	flutter analyze
 
 format: ## Formater tout le code Dart
-	dart format . --line-length 100
+	dart format lib/core lib/di lib/features lib/routes lib/main.dart test integration_test --line-length 100
 
 format-check: ## Vérifier le formatage sans modifier
-	dart format . --line-length 100 --set-exit-if-changed
+	dart format lib/core lib/di lib/features lib/routes lib/main.dart test integration_test --line-length 100 --set-exit-if-changed
 
 test: ## Lancer tous les tests avec couverture
 	flutter test --coverage

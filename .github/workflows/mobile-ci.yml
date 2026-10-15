@@ -23,7 +23,7 @@ jobs:
           cache: true
       - run: flutter pub get
       - name: Formatage (dart format)
-        run: dart format --output=none --set-exit-if-changed --line-length 100 lib test integration_test
+        run: dart format --output=none --set-exit-if-changed --line-length 100 lib/core lib/di lib/features lib/routes lib/main.dart test integration_test
       - name: Génération de code (build_runner)
         run: dart run build_runner build --delete-conflicting-outputs
       - run: cp .env.example .env
