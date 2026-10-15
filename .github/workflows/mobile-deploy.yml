@@ -4,6 +4,7 @@ name: Mobile Deploy
 on:
   push:
     branches: [dev, main]
+    paths-ignore: ['docs/maquettes/**', '.github/backlog/**']
   workflow_dispatch:
 
 permissions:
