@@ -215,12 +215,11 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Tag git
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if [ "${{ needs.verify.outputs.env_name }}" = "production" ]; then TAG="v${{ needs.verify.outputs.version }}"; else TAG="staging-${{ needs.verify.outputs.version }}"; fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git tag -a "$TAG" -m "Mobile ${{ needs.verify.outputs.env_name }} ${{ needs.verify.outputs.version }}"
-          git push origin "$TAG"
+          gh api "repos/${{ github.repository }}/git/refs" -f ref="refs/tags/$TAG" -f sha="${{ github.sha }}"
 
   notify:
     name: Notification Slack
