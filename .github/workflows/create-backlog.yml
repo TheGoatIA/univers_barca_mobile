@@ -1,0 +1,54 @@
+name: Créer le backlog (issues détaillées)
+
+# Création idempotente des issues décrites dans .github/backlog/ (étiquettes, jalons, issues, épopées).
+# Relançable à volonté : les issues déjà créées (identifiées par leur code entre crochets) sont ignorées.
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Simulation (n''écrit rien)'
+        type: boolean
+        default: false
+      only:
+        description: 'Codes à créer uniquement (séparés par des virgules, vide = tout)'
+        required: false
+        default: ''
+      limit:
+        description: 'Nombre maximum d''issues à créer pendant ce run (vide = illimité)'
+        required: false
+        default: ''
+
+permissions:
+  issues: write
+  contents: read
+
+concurrency:
+  group: create-backlog
+  cancel-in-progress: false
+
+jobs:
+  create:
+    name: Créer les issues
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Créer / synchroniser
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          ARGS=""
+          [ "${{ inputs.dry_run }}" = "true" ] && ARGS="$ARGS --dry-run"
+          [ -n "${{ inputs.only }}" ] && ARGS="$ARGS --only=${{ inputs.only }}"
+          [ -n "${{ inputs.limit }}" ] && ARGS="$ARGS --limit=${{ inputs.limit }}"
+          node .github/backlog/create-backlog.mjs $ARGS
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: backlog-map
+          path: .github/backlog/map.json
+          if-no-files-found: ignore
