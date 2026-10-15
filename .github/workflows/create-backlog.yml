@@ -6,21 +6,21 @@ on:
   # Déclenchement automatique : modifier .github/backlog/run.json (options ci-dessous) puis pousser sur main
   push:
     branches: [main]
-    paths: ['.github/backlog/run.json']
+    paths: [".github/backlog/run.json"]
   workflow_dispatch:
     inputs:
       dry_run:
-        description: 'Simulation (n''écrit rien)'
+        description: "Simulation (n'écrit rien)"
         type: boolean
         default: false
       only:
-        description: 'Codes à créer uniquement (séparés par des virgules, vide = tout)'
+        description: "Codes à créer uniquement (séparés par des virgules, vide = tout)"
         required: false
-        default: ''
+        default: ""
       limit:
-        description: 'Nombre maximum d''issues à créer pendant ce run (vide = illimité)'
+        description: "Nombre maximum d'issues à créer pendant ce run (vide = illimité)"
         required: false
-        default: ''
+        default: ""
 
 permissions:
   issues: write
@@ -39,11 +39,14 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '22'
+          node-version: "22"
       - name: Créer / synchroniser
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
+          BACKLOG_ASSIGNEE: BorisGautier
+          PROJECT_PAT: ${{ secrets.PROJECT_PAT }}
+          PROJECT_NUMBER: ${{ vars.PROJECT_NUMBER }}
         run: |
           DRY="${{ inputs.dry_run }}"; ONLY="${{ inputs.only }}"; LIMIT="${{ inputs.limit }}"
           if [ "${{ github.event_name }}" = "push" ]; then

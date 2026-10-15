@@ -8,6 +8,9 @@ const args = Object.fromEntries(process.argv.slice(2).map((a) => { const [k, v] 
 const DRY = !!args['dry-run'];
 const LIMIT = Number(args.limit || 100000);
 const DELAY = Number(args.delay || 7000);
+const ASSIGNEE = process.env.BACKLOG_ASSIGNEE || 'BorisGautier';
+const PROJECT_PAT = process.env.PROJECT_PAT || '';
+const PROJECT_NUMBER = process.env.PROJECT_NUMBER || '';
 const ONLY = args.only ? new Set(String(args.only).split(',')) : null;
 const dir = path.join('.github', 'backlog');
 const index = JSON.parse(fs.readFileSync(path.join(dir, 'index.json'), 'utf8'));
@@ -71,7 +74,7 @@ for (const it of index.issues) {
   const bodyFile = path.join(dir, 'issues', `${it.code}.md`);
   console.log(`➕ ${it.title}`);
   if (!DRY) {
-    const out = gh(['issue', 'create', '--title', it.title, '--body-file', bodyFile, '--label', it.labels.join(','), '--milestone', it.milestone]);
+    const out = gh(['issue', 'create', '--title', it.title, '--body-file', bodyFile, '--label', it.labels.join(','), '--milestone', it.milestone, '--assignee', ASSIGNEE]);
     const n = Number(out.trim().split('/').pop());
     known.set(it.code, n);
     await sleep(DELAY);
@@ -94,9 +97,30 @@ for (const ep of index.epics) {
     if (!DRY) { gh(['issue', 'edit', String(known.get(ep.code)), '--body-file', tmp]); await sleep(2000); }
   } else {
     console.log(`➕ ${ep.title}`);
-    if (!DRY) { const out = gh(['issue', 'create', '--title', ep.title, '--body-file', tmp, '--label', ep.labels.join(','), '--milestone', ep.milestone]); known.set(ep.code, Number(out.trim().split('/').pop())); await sleep(DELAY); }
+    if (!DRY) { const out = gh(['issue', 'create', '--title', ep.title, '--body-file', tmp, '--label', ep.labels.join(','), '--milestone', ep.milestone, '--assignee', ASSIGNEE]); known.set(ep.code, Number(out.trim().split('/').pop())); await sleep(DELAY); }
   }
   fs.rmSync(tmp, { force: true });
+}
+// 6. Assignation par défaut (issues existantes sans assigné)
+if (!DRY) {
+  const all = JSON.parse(gh(['issue', 'list', '--state', 'open', '--limit', '3000', '--json', 'number,title,assignees,url']));
+  const todo = all.filter((i) => codeOf(i.title) && i.assignees.length === 0);
+  console.log(`👤 ${todo.length} issues sans assigné → ${ASSIGNEE}`);
+  for (const i of todo) { gh(['issue', 'edit', String(i.number), '--add-assignee', ASSIGNEE]); await sleep(1200); }
+
+  // 7. Rattachement au projet GitHub (exige un jeton avec la portée « project » : secret PROJECT_PAT)
+  if (PROJECT_PAT && PROJECT_NUMBER) {
+    const owner = repo.split('/')[0];
+    const inProject = new Set(JSON.parse(execFileSync('gh', ['project', 'item-list', PROJECT_NUMBER, '--owner', owner, '--limit', '5000', '--format', 'json'], { encoding: 'utf8', env: { ...process.env, GH_TOKEN: PROJECT_PAT }, maxBuffer: 256 * 1024 * 1024 })).items.map((x) => x.content?.url).filter(Boolean));
+    const missing = all.filter((i) => codeOf(i.title) && !inProject.has(i.url));
+    console.log(`📌 ${missing.length} issues à rattacher au projet #${PROJECT_NUMBER}`);
+    for (const i of missing) {
+      execFileSync('gh', ['project', 'item-add', PROJECT_NUMBER, '--owner', owner, '--url', i.url], { encoding: 'utf8', env: { ...process.env, GH_TOKEN: PROJECT_PAT } });
+      await sleep(1000);
+    }
+  } else {
+    console.log('ℹ️  Projet GitHub non configuré (secret PROJECT_PAT + variable PROJECT_NUMBER) : étape ignorée');
+  }
 }
 fs.writeFileSync(path.join(dir, 'map.json'), JSON.stringify(Object.fromEntries(known), null, 1));
 console.log(`✅ terminé : ${created} issues créées, ${known.size} au total`);
