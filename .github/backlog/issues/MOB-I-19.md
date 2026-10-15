@@ -25,6 +25,8 @@ _Module : La Masia Academy_
 
 </details>
 
+**Issues liées sur ce même écran :** [API-FANT-20](https://github.com/TheGoatIA/univers_barca_api/issues?q=is%3Aissue%20%22%5BAPI-FANT-20%5D%22)
+
 ## 📐 Règles de gestion
 
 - Déclenché par flag distant ou 403 module désactivé.

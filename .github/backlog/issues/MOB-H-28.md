@@ -25,6 +25,8 @@ _Module : Fantasy Barça_
 
 </details>
 
+**Issues liées sur ce même écran :** [API-FANT-19](https://github.com/TheGoatIA/univers_barca_api/issues?q=is%3Aissue%20%22%5BAPI-FANT-19%5D%22) · [API-FANT-20](https://github.com/TheGoatIA/univers_barca_api/issues?q=is%3Aissue%20%22%5BAPI-FANT-20%5D%22)
+
 ## 📐 Règles de gestion
 
 - Déclenché par le flag distant ou une réponse 403 'module désactivé' (FantasyDisabledFailure).

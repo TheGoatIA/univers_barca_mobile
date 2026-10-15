@@ -25,6 +25,8 @@ _Module : Fantasy Barça_
 
 </details>
 
+**Issues liées sur ce même écran :** [API-FANT-05](https://github.com/TheGoatIA/univers_barca_api/issues?q=is%3Aissue%20%22%5BAPI-FANT-05%5D%22) · [API-FANT-19](https://github.com/TheGoatIA/univers_barca_api/issues?q=is%3Aissue%20%22%5BAPI-FANT-19%5D%22)
+
 ## 📐 Règles de gestion
 
 - Affiché si GET /fantasy/team renvoie 404 pour la journée courante.

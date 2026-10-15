@@ -25,6 +25,8 @@ _Module : Fantasy Barça_
 
 </details>
 
+**Issues liées sur ce même écran :** [API-FANT-08](https://github.com/TheGoatIA/univers_barca_api/issues?q=is%3Aissue%20%22%5BAPI-FANT-08%5D%22) · [API-FANT-09](https://github.com/TheGoatIA/univers_barca_api/issues?q=is%3Aissue%20%22%5BAPI-FANT-09%5D%22) · [API-FANT-10](https://github.com/TheGoatIA/univers_barca_api/issues?q=is%3Aissue%20%22%5BAPI-FANT-10%5D%22) · [API-FANT-13](https://github.com/TheGoatIA/univers_barca_api/issues?q=is%3Aissue%20%22%5BAPI-FANT-13%5D%22)
+
 ## 📐 Règles de gestion
 
 - Chaque ligne = événement x occurrences x points du barème (ex. But milieu +6, Passe décisive +3, Titularisation ≥ 60 min +2).

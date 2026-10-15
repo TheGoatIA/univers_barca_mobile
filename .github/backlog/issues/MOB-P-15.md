@@ -25,6 +25,8 @@ _Module : Culé Passport_
 
 </details>
 
+**Issues liées sur ce même écran :** [API-PASS-21](https://github.com/TheGoatIA/univers_barca_api/issues?q=is%3Aissue%20%22%5BAPI-PASS-21%5D%22) · [API-PASS-32](https://github.com/TheGoatIA/univers_barca_api/issues?q=is%3Aissue%20%22%5BAPI-PASS-32%5D%22)
+
 ## 📐 Règles de gestion
 
 - Valeur stockée dans avatarKey (ex. 'player_yamal', 'initials_blue', 'color_garnet').

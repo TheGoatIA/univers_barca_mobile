@@ -1614,6 +1614,1336 @@
    ]
   },
   {
+   "code": "MOB-D-01",
+   "title": "[MOB-D-01] Gabarit des features games / guess_the_player et routes du hub",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "module:systeme",
+    "phase:1",
+    "priorite:P0",
+    "taille:S",
+    "type:infra"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "infra",
+   "ecrans": [
+    "D-01",
+    "D-03"
+   ]
+  },
+  {
+   "code": "MOB-D-02",
+   "title": "[MOB-D-02] Modèles de données Guess the Player (freezed + json_serializable)",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:donnees"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "donnees",
+   "ecrans": [
+    "D-03",
+    "D-05",
+    "D-07"
+   ]
+  },
+  {
+   "code": "MOB-D-03",
+   "title": "[MOB-D-03] Datasource Chopper Guess the Player (today, attempt, history)",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:api"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "api",
+   "ecrans": [
+    "D-03",
+    "D-04",
+    "D-11"
+   ]
+  },
+  {
+   "code": "MOB-D-04",
+   "title": "[MOB-D-04] Cache Drift du défi du jour et file d'attente des tentatives",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:donnees"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "donnees",
+   "ecrans": [
+    "D-12",
+    "D-10"
+   ]
+  },
+  {
+   "code": "MOB-D-05",
+   "title": "[MOB-D-05] Repository et cas d'usage Guess the Player",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "fonctionnel",
+   "ecrans": [
+    "D-03",
+    "D-04",
+    "D-07"
+   ]
+  },
+  {
+   "code": "MOB-D-06",
+   "title": "[MOB-D-06] GuessThePlayerBloc : machine à états d'une partie",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:L",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "fonctionnel",
+   "ecrans": [
+    "D-03",
+    "D-04",
+    "D-05",
+    "D-06",
+    "D-07",
+    "D-08",
+    "D-12"
+   ]
+  },
+  {
+   "code": "MOB-D-07",
+   "title": "[MOB-D-07] Statut agrégé du hub des jeux (défi du jour, quiz, niveau, historique)",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "fonctionnel",
+   "ecrans": [
+    "D-01"
+   ]
+  },
+  {
+   "code": "MOB-D-08",
+   "title": "[MOB-D-08] Écran Hub des jeux",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "ecran",
+   "ecrans": [
+    "D-01"
+   ]
+  },
+  {
+   "code": "MOB-D-09",
+   "title": "[MOB-D-09] Feuille « Comment jouer ? » (règles du jeu)",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "ecran",
+   "ecrans": [
+    "D-02"
+   ]
+  },
+  {
+   "code": "MOB-D-10",
+   "title": "[MOB-D-10] Plateau de jeu : en-tête, grille 6 x 5 et légende (début de partie)",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:L",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "ecran",
+   "ecrans": [
+    "D-03",
+    "D-05",
+    "D-06"
+   ]
+  },
+  {
+   "code": "MOB-D-11",
+   "title": "[MOB-D-11] Animation de révélation des indices (retournement séquentiel)",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:M",
+    "type:ux",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "ux",
+   "ecrans": [
+    "D-04",
+    "D-05",
+    "D-06"
+   ]
+  },
+  {
+   "code": "MOB-D-12",
+   "title": "[MOB-D-12] Recherche de joueur avec suggestions (autocomplétion)",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "ecran",
+   "ecrans": [
+    "D-04",
+    "D-03"
+   ]
+  },
+  {
+   "code": "MOB-D-13",
+   "title": "[MOB-D-13] Validation et soumission d'une tentative",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:S",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "fonctionnel",
+   "ecrans": [
+    "D-04",
+    "D-05",
+    "D-06"
+   ]
+  },
+  {
+   "code": "MOB-D-14",
+   "title": "[MOB-D-14] État « dernier essai » et jauge de tentatives restantes",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "ecran",
+   "ecrans": [
+    "D-06",
+    "D-05"
+   ]
+  },
+  {
+   "code": "MOB-D-15",
+   "title": "[MOB-D-15] Points, série (streak) et maintien de la série",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "fonctionnel",
+   "ecrans": [
+    "D-07",
+    "D-08",
+    "D-01"
+   ]
+  },
+  {
+   "code": "MOB-D-16",
+   "title": "[MOB-D-16] Écran de résultat — victoire",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "ecran",
+   "ecrans": [
+    "D-07"
+   ]
+  },
+  {
+   "code": "MOB-D-17",
+   "title": "[MOB-D-17] Écran de résultat — défaite avec révélation",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "ecran",
+   "ecrans": [
+    "D-08"
+   ]
+  },
+  {
+   "code": "MOB-D-18",
+   "title": "[MOB-D-18] Génération de l'image de résultat et du texte de partage",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:M",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "fonctionnel",
+   "ecrans": [
+    "D-09",
+    "D-07"
+   ]
+  },
+  {
+   "code": "MOB-D-19",
+   "title": "[MOB-D-19] Feuille de partage (WhatsApp, Instagram, Copier, Image)",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "ecran",
+   "ecrans": [
+    "D-09"
+   ]
+  },
+  {
+   "code": "MOB-D-20",
+   "title": "[MOB-D-20] Écran « Déjà joué » avec compte à rebours vers le prochain défi",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "ecran",
+   "ecrans": [
+    "D-10"
+   ]
+  },
+  {
+   "code": "MOB-D-21",
+   "title": "[MOB-D-21] Changement de jour (minuit) et fuseau de référence du défi",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:S",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "fonctionnel",
+   "ecrans": [
+    "D-10",
+    "D-01",
+    "D-03"
+   ]
+  },
+  {
+   "code": "MOB-D-22",
+   "title": "[MOB-D-22] Hors-ligne : tentative en attente et bandeau « connexion perdue »",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "ecran",
+   "ecrans": [
+    "D-12"
+   ]
+  },
+  {
+   "code": "MOB-D-23",
+   "title": "[MOB-D-23] Calcul et chargement des statistiques personnelles",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:S",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "fonctionnel",
+   "ecrans": [
+    "D-11",
+    "D-01"
+   ]
+  },
+  {
+   "code": "MOB-D-24",
+   "title": "[MOB-D-24] Écran Historique et statistiques du jeu",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "ecran",
+   "ecrans": [
+    "D-11"
+   ]
+  },
+  {
+   "code": "MOB-D-25",
+   "title": "[MOB-D-25] Sécurité du jeu : aucune fuite de la solution côté client",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "security",
+    "taille:S",
+    "type:securite"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "securite",
+   "ecrans": [
+    "D-03",
+    "D-07",
+    "D-08"
+   ]
+  },
+  {
+   "code": "MOB-D-26",
+   "title": "[MOB-D-26] Accessibilité du plateau (couleurs + formes + lecteur d'écran)",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:M",
+    "type:ux",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "ux",
+   "ecrans": [
+    "D-03",
+    "D-05",
+    "D-06",
+    "D-07"
+   ]
+  },
+  {
+   "code": "MOB-D-27",
+   "title": "[MOB-D-27] Performance de l'autocomplétion et des images joueurs",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "performance",
+    "phase:1",
+    "priorite:P2",
+    "taille:S",
+    "type:performance"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "performance",
+   "ecrans": [
+    "D-04"
+   ]
+  },
+  {
+   "code": "MOB-D-28",
+   "title": "[MOB-D-28] Événements analytics du jeu Guess the Player",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P2",
+    "taille:XS",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "fonctionnel",
+   "ecrans": [
+    "D-01",
+    "D-03",
+    "D-07",
+    "D-08",
+    "D-09",
+    "D-10",
+    "D-11"
+   ]
+  },
+  {
+   "code": "MOB-D-29",
+   "title": "[MOB-D-29] Internationalisation FR/EN/ES du hub et de Guess the Player",
+   "labels": [
+    "flutter",
+    "i18n",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:S",
+    "type:i18n"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "i18n",
+   "ecrans": [
+    "D-01",
+    "D-02",
+    "D-03",
+    "D-04",
+    "D-05",
+    "D-06",
+    "D-07",
+    "D-08",
+    "D-09",
+    "D-10",
+    "D-11",
+    "D-12"
+   ]
+  },
+  {
+   "code": "MOB-D-30",
+   "title": "[MOB-D-30] Tests d'intégration et golden du parcours Guess the Player",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:M",
+    "tests",
+    "type:tests"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-D",
+   "type": "tests",
+   "ecrans": [
+    "D-01",
+    "D-02",
+    "D-03",
+    "D-04",
+    "D-05",
+    "D-06",
+    "D-07",
+    "D-08",
+    "D-09",
+    "D-10",
+    "D-11",
+    "D-12"
+   ]
+  },
+  {
+   "code": "MOB-E-01",
+   "title": "[MOB-E-01] Gabarit de la feature quiz et routes",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "module:systeme",
+    "phase:1",
+    "priorite:P0",
+    "taille:S",
+    "type:infra"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "infra",
+   "ecrans": [
+    "E-01",
+    "E-02"
+   ]
+  },
+  {
+   "code": "MOB-E-02",
+   "title": "[MOB-E-02] Modèles de données du quiz (freezed + json_serializable)",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:donnees"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "donnees",
+   "ecrans": [
+    "E-03",
+    "E-06",
+    "E-08",
+    "E-13"
+   ]
+  },
+  {
+   "code": "MOB-E-03",
+   "title": "[MOB-E-03] Datasource Chopper du quiz (daily, practice, answer, leaderboard)",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:api"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "api",
+   "ecrans": [
+    "E-02",
+    "E-03",
+    "E-12",
+    "E-13"
+   ]
+  },
+  {
+   "code": "MOB-E-04",
+   "title": "[MOB-E-04] Persistance Drift : quiz du jour, session en cours et réponses en attente",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:M",
+    "type:donnees"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "donnees",
+   "ecrans": [
+    "E-18",
+    "E-17",
+    "E-03"
+   ]
+  },
+  {
+   "code": "MOB-E-05",
+   "title": "[MOB-E-05] Repository et cas d'usage du quiz",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "fonctionnel",
+   "ecrans": [
+    "E-02",
+    "E-03",
+    "E-08",
+    "E-13"
+   ]
+  },
+  {
+   "code": "MOB-E-06",
+   "title": "[MOB-E-06] QuizSessionBloc : déroulé d'une session (jour et entraînement)",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:L",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "fonctionnel",
+   "ecrans": [
+    "E-02",
+    "E-03",
+    "E-04",
+    "E-06",
+    "E-07",
+    "E-08",
+    "E-12",
+    "E-18"
+   ]
+  },
+  {
+   "code": "MOB-E-07",
+   "title": "[MOB-E-07] Minuteur de question robuste (30 s)",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "fonctionnel",
+   "ecrans": [
+    "E-03",
+    "E-05",
+    "E-12"
+   ]
+  },
+  {
+   "code": "MOB-E-08",
+   "title": "[MOB-E-08] Points de session et progression vers le palier suivant",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "fonctionnel",
+   "ecrans": [
+    "E-08",
+    "E-01",
+    "E-09",
+    "E-10"
+   ]
+  },
+  {
+   "code": "MOB-E-09",
+   "title": "[MOB-E-09] Écran Hub du quiz (niveau, quiz du jour, paliers)",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "ecran",
+   "ecrans": [
+    "E-01"
+   ]
+  },
+  {
+   "code": "MOB-E-10",
+   "title": "[MOB-E-10] Quiz du jour — introduction",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "ecran",
+   "ecrans": [
+    "E-02"
+   ]
+  },
+  {
+   "code": "MOB-E-11",
+   "title": "[MOB-E-11] Chargement des questions",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:XS",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "ecran",
+   "ecrans": [
+    "E-18"
+   ]
+  },
+  {
+   "code": "MOB-E-12",
+   "title": "[MOB-E-12] Quiz du jour déjà joué",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "ecran",
+   "ecrans": [
+    "E-17"
+   ]
+  },
+  {
+   "code": "MOB-E-13",
+   "title": "[MOB-E-13] Écran Question (composant partagé jour / entraînement)",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:L",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "ecran",
+   "ecrans": [
+    "E-03",
+    "E-12"
+   ]
+  },
+  {
+   "code": "MOB-E-14",
+   "title": "[MOB-E-14] État « réponse sélectionnée » (avant validation)",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "ecran",
+   "ecrans": [
+    "E-04"
+   ]
+  },
+  {
+   "code": "MOB-E-15",
+   "title": "[MOB-E-15] État « temps presque écoulé »",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "ecran",
+   "ecrans": [
+    "E-05"
+   ]
+  },
+  {
+   "code": "MOB-E-16",
+   "title": "[MOB-E-16] Bonne réponse et explication",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "ecran",
+   "ecrans": [
+    "E-06"
+   ]
+  },
+  {
+   "code": "MOB-E-17",
+   "title": "[MOB-E-17] Mauvaise réponse, temps écoulé et explication",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "ecran",
+   "ecrans": [
+    "E-07"
+   ]
+  },
+  {
+   "code": "MOB-E-18",
+   "title": "[MOB-E-18] Animation de transition entre questions",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P2",
+    "taille:S",
+    "type:ux",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "ux",
+   "ecrans": [
+    "E-03",
+    "E-06",
+    "E-07"
+   ]
+  },
+  {
+   "code": "MOB-E-19",
+   "title": "[MOB-E-19] Écran Résultat de la session",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "ecran",
+   "ecrans": [
+    "E-08"
+   ]
+  },
+  {
+   "code": "MOB-E-20",
+   "title": "[MOB-E-20] Revoir les explications de la session",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "ecran",
+   "ecrans": [
+    "E-08",
+    "E-06",
+    "E-07"
+   ]
+  },
+  {
+   "code": "MOB-E-21",
+   "title": "[MOB-E-21] Modale « Niveau supérieur ! »",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "ecran",
+   "ecrans": [
+    "E-09"
+   ]
+  },
+  {
+   "code": "MOB-E-22",
+   "title": "[MOB-E-22] Modale « On ajuste le tir » (retour au palier inférieur)",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "ecran",
+   "ecrans": [
+    "E-10"
+   ]
+  },
+  {
+   "code": "MOB-E-23",
+   "title": "[MOB-E-23] Entraînement libre — configuration",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "ecran",
+   "ecrans": [
+    "E-11"
+   ]
+  },
+  {
+   "code": "MOB-E-24",
+   "title": "[MOB-E-24] Règles de l'entraînement libre : sans impact et illimité",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:S",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "fonctionnel",
+   "ecrans": [
+    "E-11",
+    "E-12",
+    "E-08"
+   ]
+  },
+  {
+   "code": "MOB-E-25",
+   "title": "[MOB-E-25] QuizLeaderboardCubit : classements monde / amis / périodes",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "fonctionnel",
+   "ecrans": [
+    "E-13",
+    "E-14"
+   ]
+  },
+  {
+   "code": "MOB-E-26",
+   "title": "[MOB-E-26] Classement mondial (podium + liste)",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "ecran",
+   "ecrans": [
+    "E-13"
+   ]
+  },
+  {
+   "code": "MOB-E-27",
+   "title": "[MOB-E-27] Classement entre amis (ligue privée)",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "ecran",
+   "ecrans": [
+    "E-14"
+   ]
+  },
+  {
+   "code": "MOB-E-28",
+   "title": "[MOB-E-28] Inviter des amis (code et lien)",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "ecran",
+   "ecrans": [
+    "E-15"
+   ]
+  },
+  {
+   "code": "MOB-E-29",
+   "title": "[MOB-E-29] Rejoindre une ligue avec un code",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "ecran",
+   "ecrans": [
+    "E-16"
+   ]
+  },
+  {
+   "code": "MOB-E-30",
+   "title": "[MOB-E-30] Reprise de session et perte de réseau pendant le quiz",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:M",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "fonctionnel",
+   "ecrans": [
+    "E-03",
+    "E-18",
+    "E-17"
+   ]
+  },
+  {
+   "code": "MOB-E-31",
+   "title": "[MOB-E-31] Sécurité du quiz : pas de bonne réponse côté client, intégrité du score",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "security",
+    "taille:S",
+    "type:securite"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "securite",
+   "ecrans": [
+    "E-03",
+    "E-06",
+    "E-12"
+   ]
+  },
+  {
+   "code": "MOB-E-32",
+   "title": "[MOB-E-32] Accessibilité du quiz (lecteur d'écran, minuteur, contrastes)",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:M",
+    "type:ux",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "ux",
+   "ecrans": [
+    "E-03",
+    "E-04",
+    "E-05",
+    "E-06",
+    "E-07",
+    "E-13"
+   ]
+  },
+  {
+   "code": "MOB-E-33",
+   "title": "[MOB-E-33] Internationalisation FR/EN/ES du quiz et des classements",
+   "labels": [
+    "flutter",
+    "i18n",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:S",
+    "type:i18n"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "i18n",
+   "ecrans": [
+    "E-01",
+    "E-02",
+    "E-03",
+    "E-04",
+    "E-05",
+    "E-06",
+    "E-07",
+    "E-08",
+    "E-09",
+    "E-10",
+    "E-11",
+    "E-12",
+    "E-13",
+    "E-14",
+    "E-15",
+    "E-16",
+    "E-17",
+    "E-18"
+   ]
+  },
+  {
+   "code": "MOB-E-34",
+   "title": "[MOB-E-34] Tests d'intégration et golden du quiz",
+   "labels": [
+    "flutter",
+    "module:jeux",
+    "phase:1",
+    "priorite:P1",
+    "taille:M",
+    "tests",
+    "type:tests"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-E",
+   "type": "tests",
+   "ecrans": [
+    "E-01",
+    "E-02",
+    "E-03",
+    "E-04",
+    "E-05",
+    "E-06",
+    "E-07",
+    "E-08",
+    "E-09",
+    "E-10",
+    "E-11",
+    "E-12",
+    "E-13",
+    "E-14",
+    "E-15",
+    "E-16",
+    "E-17",
+    "E-18"
+   ]
+  },
+  {
    "code": "MOB-F-01",
    "title": "[MOB-F-01] Modèles de données de l'historique (frise, match, joueur)",
    "labels": [
@@ -7558,6 +8888,577 @@
    ]
   },
   {
+   "code": "MOB-O-01",
+   "title": "[MOB-O-01] Gabarit de la feature notifications et routes",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "module:systeme",
+    "phase:1",
+    "priorite:P0",
+    "taille:S",
+    "type:infra"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "infra",
+   "ecrans": [
+    "O-01",
+    "O-05"
+   ]
+  },
+  {
+   "code": "MOB-O-02",
+   "title": "[MOB-O-02] Modèles de données : préférences, notification, jeton d'appareil",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:donnees"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "donnees",
+   "ecrans": [
+    "O-01",
+    "O-02",
+    "O-03",
+    "O-04",
+    "O-05"
+   ]
+  },
+  {
+   "code": "MOB-O-03",
+   "title": "[MOB-O-03] Datasource Chopper des notifications (préférences, boîte de réception, jetons)",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:api"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "api",
+   "ecrans": [
+    "O-01",
+    "O-05",
+    "O-06"
+   ]
+  },
+  {
+   "code": "MOB-O-04",
+   "title": "[MOB-O-04] Cache Drift de la boîte de réception et des préférences",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P1",
+    "taille:M",
+    "type:donnees"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "donnees",
+   "ecrans": [
+    "O-05",
+    "O-06",
+    "O-01"
+   ]
+  },
+  {
+   "code": "MOB-O-05",
+   "title": "[MOB-O-05] Repository et cas d'usage des notifications",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "fonctionnel",
+   "ecrans": [
+    "O-01",
+    "O-05"
+   ]
+  },
+  {
+   "code": "MOB-O-06",
+   "title": "[MOB-O-06] NotificationPreferencesCubit : mises à jour optimistes et synchronisation",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "fonctionnel",
+   "ecrans": [
+    "O-01",
+    "O-02",
+    "O-03",
+    "O-04",
+    "O-07"
+   ]
+  },
+  {
+   "code": "MOB-O-07",
+   "title": "[MOB-O-07] Centre de préférences de notification",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "ecran",
+   "ecrans": [
+    "O-01"
+   ]
+  },
+  {
+   "code": "MOB-O-08",
+   "title": "[MOB-O-08] Détail — rappels de match",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "ecran",
+   "ecrans": [
+    "O-02"
+   ]
+  },
+  {
+   "code": "MOB-O-09",
+   "title": "[MOB-O-09] Détail — série en danger (activation et heure du rappel)",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "ecran",
+   "ecrans": [
+    "O-03"
+   ]
+  },
+  {
+   "code": "MOB-O-10",
+   "title": "[MOB-O-10] Heures calmes (plage horaire et jours)",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "ecran",
+   "ecrans": [
+    "O-04"
+   ]
+  },
+  {
+   "code": "MOB-O-11",
+   "title": "[MOB-O-11] Règles des heures calmes, fuseau horaire et exceptions live",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P1",
+    "taille:S",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "fonctionnel",
+   "ecrans": [
+    "O-04",
+    "O-03",
+    "O-08"
+   ]
+  },
+  {
+   "code": "MOB-O-12",
+   "title": "[MOB-O-12] Enregistrement et renouvellement du jeton FCM",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "fonctionnel",
+   "ecrans": [
+    "O-01",
+    "O-07"
+   ]
+  },
+  {
+   "code": "MOB-O-13",
+   "title": "[MOB-O-13] Permission de notifications : écran d'explication (priming) et demande contextuelle",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:fonctionnel",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "fonctionnel",
+   "ecrans": [
+    "O-07",
+    "O-01"
+   ]
+  },
+  {
+   "code": "MOB-O-14",
+   "title": "[MOB-O-14] État « Notifications désactivées » et réactivation",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P0",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "ecran",
+   "ecrans": [
+    "O-07"
+   ]
+  },
+  {
+   "code": "MOB-O-15",
+   "title": "[MOB-O-15] NotificationInboxCubit : liste, filtres, pagination, lecture",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "fonctionnel",
+   "ecrans": [
+    "O-05",
+    "O-06"
+   ]
+  },
+  {
+   "code": "MOB-O-16",
+   "title": "[MOB-O-16] Boîte de réception des notifications",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "ecran",
+   "ecrans": [
+    "O-05"
+   ]
+  },
+  {
+   "code": "MOB-O-17",
+   "title": "[MOB-O-17] Boîte de réception vide",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P1",
+    "taille:XS",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "ecran",
+   "ecrans": [
+    "O-06"
+   ]
+  },
+  {
+   "code": "MOB-O-18",
+   "title": "[MOB-O-18] Routage des notifications par deep link (premier plan, arrière-plan, app fermée)",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P0",
+    "taille:L",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "fonctionnel",
+   "ecrans": [
+    "O-05",
+    "O-08",
+    "O-09",
+    "O-10"
+   ]
+  },
+  {
+   "code": "MOB-O-19",
+   "title": "[MOB-O-19] Réception FCM : premier plan, arrière-plan, app fermée et canaux Android",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P0",
+    "taille:L",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "fonctionnel",
+   "ecrans": [
+    "O-08",
+    "O-09",
+    "O-10"
+   ]
+  },
+  {
+   "code": "MOB-O-20",
+   "title": "[MOB-O-20] Notification système : rappel de match (écran verrouillé)",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P1",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "ecran",
+   "ecrans": [
+    "O-08"
+   ]
+  },
+  {
+   "code": "MOB-O-21",
+   "title": "[MOB-O-21] Notifications système : série, anniversaire, communauté, résultat final",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "ecran",
+   "ecrans": [
+    "O-09"
+   ]
+  },
+  {
+   "code": "MOB-O-22",
+   "title": "[MOB-O-22] Bannière de notification dans l'application (premier plan)",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "ecran",
+   "ecrans": [
+    "O-10"
+   ]
+  },
+  {
+   "code": "MOB-O-23",
+   "title": "[MOB-O-23] Compteur de non-lus : cloche du dashboard et badge d'icône",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P2",
+    "taille:S",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "fonctionnel",
+   "ecrans": [
+    "O-05"
+   ]
+  },
+  {
+   "code": "MOB-O-24",
+   "title": "[MOB-O-24] Consentement aux notifications push (RGPD) et révocation",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P0",
+    "rgpd",
+    "taille:S",
+    "type:rgpd"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "rgpd",
+   "ecrans": [
+    "O-07",
+    "O-01",
+    "O-04"
+   ]
+  },
+  {
+   "code": "MOB-O-25",
+   "title": "[MOB-O-25] Sécurité des notifications : contenu, deep links et confidentialité écran verrouillé",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P1",
+    "security",
+    "taille:S",
+    "type:securite"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "securite",
+   "ecrans": [
+    "O-08",
+    "O-09",
+    "O-10"
+   ]
+  },
+  {
+   "code": "MOB-O-26",
+   "title": "[MOB-O-26] Accessibilité des préférences et de la boîte de réception",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P1",
+    "taille:S",
+    "type:ux",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "ux",
+   "ecrans": [
+    "O-01",
+    "O-02",
+    "O-03",
+    "O-04",
+    "O-05"
+   ]
+  },
+  {
+   "code": "MOB-O-27",
+   "title": "[MOB-O-27] Internationalisation FR/EN/ES des notifications",
+   "labels": [
+    "flutter",
+    "i18n",
+    "module:notifications",
+    "phase:1",
+    "priorite:P1",
+    "taille:S",
+    "type:i18n"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "i18n",
+   "ecrans": [
+    "O-01",
+    "O-02",
+    "O-03",
+    "O-04",
+    "O-05",
+    "O-06",
+    "O-07",
+    "O-08",
+    "O-09",
+    "O-10"
+   ]
+  },
+  {
+   "code": "MOB-O-28",
+   "title": "[MOB-O-28] Tests d'intégration et golden des notifications",
+   "labels": [
+    "flutter",
+    "module:notifications",
+    "phase:1",
+    "priorite:P1",
+    "taille:M",
+    "tests",
+    "type:tests"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-O",
+   "type": "tests",
+   "ecrans": [
+    "O-01",
+    "O-02",
+    "O-03",
+    "O-04",
+    "O-05",
+    "O-06",
+    "O-07",
+    "O-08",
+    "O-09",
+    "O-10"
+   ]
+  },
+  {
    "code": "MOB-P-01",
    "title": "[MOB-P-01] Entités et modèles JSON Passport (progression, badge, profil public)",
    "labels": [
@@ -7973,6 +9874,2319 @@
     "P-08",
     "P-10"
    ]
+  },
+  {
+   "code": "MOB-Q-01",
+   "title": "[MOB-Q-01] Gabarit de la feature settings / account et routes",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "module:systeme",
+    "phase:1",
+    "priorite:P0",
+    "taille:S",
+    "type:infra"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "infra",
+   "ecrans": [
+    "Q-01",
+    "Q-07"
+   ]
+  },
+  {
+   "code": "MOB-Q-02",
+   "title": "[MOB-Q-02] Modèles de données : profil, préférences, consentements, appareils",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:donnees"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "donnees",
+   "ecrans": [
+    "Q-01",
+    "Q-05",
+    "Q-07",
+    "Q-10"
+   ]
+  },
+  {
+   "code": "MOB-Q-03",
+   "title": "[MOB-Q-03] Datasource Chopper du compte et des réglages",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P0",
+    "taille:L",
+    "type:api"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "api",
+   "ecrans": [
+    "Q-05",
+    "Q-07",
+    "Q-08",
+    "Q-09",
+    "Q-10",
+    "Q-11",
+    "Q-12",
+    "Q-14"
+   ]
+  },
+  {
+   "code": "MOB-Q-04",
+   "title": "[MOB-Q-04] Stockage local des préférences d'affichage",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P0",
+    "taille:S",
+    "type:donnees"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "donnees",
+   "ecrans": [
+    "Q-02",
+    "Q-03",
+    "Q-04"
+   ]
+  },
+  {
+   "code": "MOB-Q-05",
+   "title": "[MOB-Q-05] SettingsCubit : état local immédiat et synchronisation compte",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P0",
+    "taille:L",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "fonctionnel",
+   "ecrans": [
+    "Q-01",
+    "Q-02",
+    "Q-03",
+    "Q-04",
+    "Q-05"
+   ]
+  },
+  {
+   "code": "MOB-Q-06",
+   "title": "[MOB-Q-06] Écran Paramètres (liste groupée)",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "ecran",
+   "ecrans": [
+    "Q-01"
+   ]
+  },
+  {
+   "code": "MOB-Q-07",
+   "title": "[MOB-Q-07] Écran Langue (Français, English, Español, suivre le système)",
+   "labels": [
+    "flutter",
+    "i18n",
+    "module:parametres",
+    "phase:1",
+    "priorite:P0",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "ecran",
+   "ecrans": [
+    "Q-02"
+   ]
+  },
+  {
+   "code": "MOB-Q-08",
+   "title": "[MOB-Q-08] Écran Thème (Auto, Clair, Sombre)",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P0",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "ecran",
+   "ecrans": [
+    "Q-03"
+   ]
+  },
+  {
+   "code": "MOB-Q-09",
+   "title": "[MOB-Q-09] Taille du texte et accessibilité",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "ecran",
+   "ecrans": [
+    "Q-04"
+   ]
+  },
+  {
+   "code": "MOB-Q-10",
+   "title": "[MOB-Q-10] Gestion des consentements : ConsentRepository et historique",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P0",
+    "rgpd",
+    "taille:M",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "fonctionnel",
+   "ecrans": [
+    "Q-05",
+    "Q-06"
+   ]
+  },
+  {
+   "code": "MOB-Q-11",
+   "title": "[MOB-Q-11] Confidentialité et consentements",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P0",
+    "rgpd",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "ecran",
+   "ecrans": [
+    "Q-05"
+   ]
+  },
+  {
+   "code": "MOB-Q-12",
+   "title": "[MOB-Q-12] Dialogue « Désactiver la localisation ? » (révocation)",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P0",
+    "rgpd",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "ecran",
+   "ecrans": [
+    "Q-06"
+   ]
+  },
+  {
+   "code": "MOB-Q-13",
+   "title": "[MOB-Q-13] Réglage « Visibilité sur la carte » (masquée, pays, ville)",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P1",
+    "rgpd",
+    "taille:S",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "fonctionnel",
+   "ecrans": [
+    "Q-01",
+    "Q-05"
+   ]
+  },
+  {
+   "code": "MOB-Q-14",
+   "title": "[MOB-Q-14] Écran « Gérer mon compte »",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "ecran",
+   "ecrans": [
+    "Q-07"
+   ]
+  },
+  {
+   "code": "MOB-Q-15",
+   "title": "[MOB-Q-15] Validation et force du mot de passe",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P0",
+    "security",
+    "taille:S",
+    "type:fonctionnel"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "fonctionnel",
+   "ecrans": [
+    "Q-08"
+   ]
+  },
+  {
+   "code": "MOB-Q-16",
+   "title": "[MOB-Q-16] Changer le mot de passe",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P0",
+    "security",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "ecran",
+   "ecrans": [
+    "Q-08"
+   ]
+  },
+  {
+   "code": "MOB-Q-17",
+   "title": "[MOB-Q-17] Changer l'adresse e-mail (envoi du code de vérification)",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P1",
+    "security",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "ecran",
+   "ecrans": [
+    "Q-09"
+   ]
+  },
+  {
+   "code": "MOB-Q-18",
+   "title": "[MOB-Q-18] Appareils connectés (liste, retrait, déconnexion globale)",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P1",
+    "security",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "ecran",
+   "ecrans": [
+    "Q-10"
+   ]
+  },
+  {
+   "code": "MOB-Q-19",
+   "title": "[MOB-Q-19] Exporter mes données (demande)",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P0",
+    "rgpd",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "ecran",
+   "ecrans": [
+    "Q-11"
+   ]
+  },
+  {
+   "code": "MOB-Q-20",
+   "title": "[MOB-Q-20] Export prêt (téléchargement et renvoi)",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P1",
+    "rgpd",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "ecran",
+   "ecrans": [
+    "Q-12"
+   ]
+  },
+  {
+   "code": "MOB-Q-21",
+   "title": "[MOB-Q-21] Suppression du compte — étape 1/3 : conséquences",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P0",
+    "rgpd",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "ecran",
+   "ecrans": [
+    "Q-13"
+   ]
+  },
+  {
+   "code": "MOB-Q-22",
+   "title": "[MOB-Q-22] Suppression du compte — dernière confirmation (3/3)",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P0",
+    "rgpd",
+    "security",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "ecran",
+   "ecrans": [
+    "Q-14"
+   ]
+  },
+  {
+   "code": "MOB-Q-23",
+   "title": "[MOB-Q-23] Effacement local complet après suppression ou déconnexion globale",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P0",
+    "rgpd",
+    "security",
+    "taille:M",
+    "type:securite"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "securite",
+   "ecrans": [
+    "Q-14",
+    "Q-15",
+    "Q-16",
+    "Q-10"
+   ]
+  },
+  {
+   "code": "MOB-Q-24",
+   "title": "[MOB-Q-24] Compte supprimé (écran de fin)",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P0",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "ecran",
+   "ecrans": [
+    "Q-15"
+   ]
+  },
+  {
+   "code": "MOB-Q-25",
+   "title": "[MOB-Q-25] Confirmation de déconnexion",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P0",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "ecran",
+   "ecrans": [
+    "Q-16"
+   ]
+  },
+  {
+   "code": "MOB-Q-26",
+   "title": "[MOB-Q-26] À propos et mentions légales",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P1",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "ecran",
+   "ecrans": [
+    "Q-17"
+   ]
+  },
+  {
+   "code": "MOB-Q-27",
+   "title": "[MOB-Q-27] Aide et support (FAQ, contact, signalement de bug)",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "ecran",
+   "ecrans": [
+    "Q-18"
+   ]
+  },
+  {
+   "code": "MOB-Q-28",
+   "title": "[MOB-Q-28] Sécurité des actions sensibles du compte",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P0",
+    "security",
+    "taille:M",
+    "type:securite"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "securite",
+   "ecrans": [
+    "Q-08",
+    "Q-09",
+    "Q-10",
+    "Q-11",
+    "Q-13",
+    "Q-14"
+   ]
+  },
+  {
+   "code": "MOB-Q-29",
+   "title": "[MOB-Q-29] Accessibilité des écrans de paramètres et de compte",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P1",
+    "taille:S",
+    "type:ux",
+    "ux-ui"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "ux",
+   "ecrans": [
+    "Q-01",
+    "Q-04",
+    "Q-05",
+    "Q-07",
+    "Q-13",
+    "Q-14"
+   ]
+  },
+  {
+   "code": "MOB-Q-30",
+   "title": "[MOB-Q-30] Internationalisation FR/EN/ES des paramètres et du compte",
+   "labels": [
+    "flutter",
+    "i18n",
+    "module:parametres",
+    "phase:1",
+    "priorite:P1",
+    "taille:S",
+    "type:i18n"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "i18n",
+   "ecrans": [
+    "Q-01",
+    "Q-02",
+    "Q-03",
+    "Q-04",
+    "Q-05",
+    "Q-06",
+    "Q-07",
+    "Q-08",
+    "Q-09",
+    "Q-10",
+    "Q-11",
+    "Q-12",
+    "Q-13",
+    "Q-14",
+    "Q-15",
+    "Q-16",
+    "Q-17",
+    "Q-18"
+   ]
+  },
+  {
+   "code": "MOB-Q-31",
+   "title": "[MOB-Q-31] Tests d'intégration et golden de Paramètres et compte",
+   "labels": [
+    "flutter",
+    "module:parametres",
+    "phase:1",
+    "priorite:P1",
+    "taille:M",
+    "tests",
+    "type:tests"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "epic": "MOB-Q",
+   "type": "tests",
+   "ecrans": [
+    "Q-01",
+    "Q-02",
+    "Q-03",
+    "Q-04",
+    "Q-05",
+    "Q-06",
+    "Q-07",
+    "Q-08",
+    "Q-09",
+    "Q-10",
+    "Q-11",
+    "Q-12",
+    "Q-13",
+    "Q-14",
+    "Q-15",
+    "Q-16",
+    "Q-17",
+    "Q-18"
+   ]
+  },
+  {
+   "code": "MOB-ZA-01",
+   "title": "[MOB-ZA-01] Tokens de couleur AppColors alignés sur le design system (clair/sombre)",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:donnees",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZA",
+   "type": "donnees",
+   "ecrans": [
+    "ZA-02"
+   ]
+  },
+  {
+   "code": "MOB-ZA-02",
+   "title": "[MOB-ZA-02] Vérification automatisée des contrastes WCAG AA des couples texte/fond",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:S",
+    "tests",
+    "type:tests",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZA",
+   "type": "tests",
+   "ecrans": [
+    "ZA-02"
+   ]
+  },
+  {
+   "code": "MOB-ZA-03",
+   "title": "[MOB-ZA-03] Dégradé hero 135° grenat → marine et dégradés dérivés",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:S",
+    "type:donnees",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZA",
+   "type": "donnees",
+   "ecrans": [
+    "ZA-02",
+    "ZB-05"
+   ]
+  },
+  {
+   "code": "MOB-ZA-04",
+   "title": "[MOB-ZA-04] Échelle typographique display/h1/h2/h3/bodyLarge/body/caption (ratio 1,25)",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:donnees",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZA",
+   "type": "donnees",
+   "ecrans": [
+    "ZA-03"
+   ]
+  },
+  {
+   "code": "MOB-ZA-05",
+   "title": "[MOB-ZA-05] Polices embarquées Barlow Condensed et Inter (hors-ligne, sans requête réseau)",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "performance",
+    "phase:0",
+    "priorite:P0",
+    "taille:S",
+    "type:infra"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZA",
+   "type": "infra",
+   "ecrans": [
+    "ZA-03"
+   ]
+  },
+  {
+   "code": "MOB-ZA-06",
+   "title": "[MOB-ZA-06] Échelle d'espacement AppSpacing (grille 4/8 px) conforme à la planche",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:S",
+    "type:donnees",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZA",
+   "type": "donnees",
+   "ecrans": [
+    "ZA-04"
+   ]
+  },
+  {
+   "code": "MOB-ZA-07",
+   "title": "[MOB-ZA-07] Rayons (6/8/12/16/24/pilule) et élévations (ombres claires, bordures sombres)",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:donnees",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZA",
+   "type": "donnees",
+   "ecrans": [
+    "ZA-04"
+   ]
+  },
+  {
+   "code": "MOB-ZA-08",
+   "title": "[MOB-ZA-08] ThemeExtension BarcaTheme et ThemeData complets clair/sombre",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:L",
+    "type:fonctionnel",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZA",
+   "type": "fonctionnel",
+   "ecrans": [
+    "ZA-02",
+    "ZA-03",
+    "ZA-04"
+   ]
+  },
+  {
+   "code": "MOB-ZA-09",
+   "title": "[MOB-ZA-09] Widgets BarcaLogo : emblème, wordmark, monochrome et tailles minimales",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZA",
+   "type": "ecran",
+   "ecrans": [
+    "ZA-01"
+   ]
+  },
+  {
+   "code": "MOB-ZA-10",
+   "title": "[MOB-ZA-10] Icône d'application et bandeaux de flavor (prod, dev, staging)",
+   "labels": [
+    "ci-cd",
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:S",
+    "type:infra"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZA",
+   "type": "infra",
+   "ecrans": [
+    "ZA-01"
+   ]
+  },
+  {
+   "code": "MOB-ZA-11",
+   "title": "[MOB-ZA-11] Bibliothèque de 146 icônes originales (grille 24 px, trait 1,8 px)",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:L",
+    "type:donnees",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZA",
+   "type": "donnees",
+   "ecrans": [
+    "ZA-05"
+   ]
+  },
+  {
+   "code": "MOB-ZA-12",
+   "title": "[MOB-ZA-12] Widget BarcaIcon : tailles, couleur, libellé sémantique",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:S",
+    "type:fonctionnel",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZA",
+   "type": "fonctionnel",
+   "ecrans": [
+    "ZA-05",
+    "ZD-05"
+   ]
+  },
+  {
+   "code": "MOB-ZA-13",
+   "title": "[MOB-ZA-13] Widgetbook : catalogue des fondations (couleurs, typo, espacements, icônes, logo)",
+   "labels": [
+    "documentation",
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "type:infra"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZA",
+   "type": "infra",
+   "ecrans": [
+    "ZA-01",
+    "ZA-02",
+    "ZA-03",
+    "ZA-04",
+    "ZA-05"
+   ]
+  },
+  {
+   "code": "MOB-ZA-14",
+   "title": "[MOB-ZA-14] Golden tests des fondations (couleurs, typo, espacements, rayons, icônes, logo)",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "tests",
+    "type:tests"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZA",
+   "type": "tests",
+   "ecrans": [
+    "ZA-01",
+    "ZA-02",
+    "ZA-03",
+    "ZA-04",
+    "ZA-05"
+   ]
+  },
+  {
+   "code": "MOB-ZA-15",
+   "title": "[MOB-ZA-15] Migration des widgets et écrans existants vers les nouveaux tokens",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "type:fonctionnel",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZA",
+   "type": "fonctionnel",
+   "ecrans": [
+    "ZA-02",
+    "ZA-03",
+    "ZA-04"
+   ]
+  },
+  {
+   "code": "MOB-ZA-16",
+   "title": "[MOB-ZA-16] Documentation des tokens et parité Flutter ↔ CSS admin",
+   "labels": [
+    "documentation",
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P2",
+    "taille:S",
+    "type:doc"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZA",
+   "type": "doc",
+   "ecrans": [
+    "ZA-02",
+    "ZA-03",
+    "ZA-04",
+    "ZD-06"
+   ]
+  },
+  {
+   "code": "MOB-ZB-01",
+   "title": "[MOB-ZB-01] BarcaButton : 8 variantes, 5 hauteurs et 3 largeurs",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:L",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZB",
+   "type": "ecran",
+   "ecrans": [
+    "ZB-01"
+   ]
+  },
+  {
+   "code": "MOB-ZB-02",
+   "title": "[MOB-ZB-02] BarcaButton : états repos, pressé, focus clavier, désactivé, chargement, succès",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:fonctionnel",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZB",
+   "type": "fonctionnel",
+   "ecrans": [
+    "ZB-01",
+    "ZC-02"
+   ]
+  },
+  {
+   "code": "MOB-ZB-03",
+   "title": "[MOB-ZB-03] Boutons avec icône, icône seule, formes, connexion sociale et bouton IA flottant",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZB",
+   "type": "ecran",
+   "ecrans": [
+    "ZB-01",
+    "ZD-05"
+   ]
+  },
+  {
+   "code": "MOB-ZB-04",
+   "title": "[MOB-ZB-04] BarcaTextField : tailles, libellé, aide et états",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:L",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZB",
+   "type": "ecran",
+   "ecrans": [
+    "ZB-02"
+   ]
+  },
+  {
+   "code": "MOB-ZB-05",
+   "title": "[MOB-ZB-05] Types de champs : mot de passe, recherche, sélecteur, date/heure, code OTP, multiligne",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:L",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZB",
+   "type": "ecran",
+   "ecrans": [
+    "ZB-02"
+   ]
+  },
+  {
+   "code": "MOB-ZB-06",
+   "title": "[MOB-ZB-06] Validation de champ sans friction : erreur à la sortie du champ, message précis",
+   "labels": [
+    "flutter",
+    "i18n",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:S",
+    "type:fonctionnel",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZB",
+   "type": "fonctionnel",
+   "ecrans": [
+    "ZB-02",
+    "ZE-04"
+   ]
+  },
+  {
+   "code": "MOB-ZB-07",
+   "title": "[MOB-ZB-07] Interrupteur, case à cocher et radio",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZB",
+   "type": "ecran",
+   "ecrans": [
+    "ZB-03"
+   ]
+  },
+  {
+   "code": "MOB-ZB-08",
+   "title": "[MOB-ZB-08] Contrôle segmenté, indicateur d'étapes et pagination par points",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZB",
+   "type": "ecran",
+   "ecrans": [
+    "ZB-03"
+   ]
+  },
+  {
+   "code": "MOB-ZB-09",
+   "title": "[MOB-ZB-09] Curseur, compteur +/− et barres de progression",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZB",
+   "type": "ecran",
+   "ecrans": [
+    "ZB-03"
+   ]
+  },
+  {
+   "code": "MOB-ZB-10",
+   "title": "[MOB-ZB-10] Chips : filtres, tailles et variantes",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZB",
+   "type": "ecran",
+   "ecrans": [
+    "ZB-03"
+   ]
+  },
+  {
+   "code": "MOB-ZB-11",
+   "title": "[MOB-ZB-11] Tags de statut, compteurs et points de notification",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZB",
+   "type": "ecran",
+   "ecrans": [
+    "ZB-04"
+   ]
+  },
+  {
+   "code": "MOB-ZB-12",
+   "title": "[MOB-ZB-12] Avatars, portraits illustrés et écussons génériques d'adversaires",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZB",
+   "type": "ecran",
+   "ecrans": [
+    "ZB-04"
+   ]
+  },
+  {
+   "code": "MOB-ZB-13",
+   "title": "[MOB-ZB-13] Cartes : standard, à plat, sélectionnée, héros, navy, or et sémantiques",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:L",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZB",
+   "type": "ecran",
+   "ecrans": [
+    "ZB-05"
+   ]
+  },
+  {
+   "code": "MOB-ZB-14",
+   "title": "[MOB-ZB-14] Lignes de liste, listes de réglages et grilles responsives",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZB",
+   "type": "ecran",
+   "ecrans": [
+    "ZB-05"
+   ]
+  },
+  {
+   "code": "MOB-ZB-15",
+   "title": "[MOB-ZB-15] Barre d'onglets inférieure à 5 entrées (piles indépendantes, pastille d'activité)",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZB",
+   "type": "ecran",
+   "ecrans": [
+    "ZB-06"
+   ]
+  },
+  {
+   "code": "MOB-ZB-16",
+   "title": "[MOB-ZB-16] Rail de navigation tablette (96 px) et barre d'application",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZB",
+   "type": "ecran",
+   "ecrans": [
+    "ZB-06"
+   ]
+  },
+  {
+   "code": "MOB-ZB-17",
+   "title": "[MOB-ZB-17] Bandeaux d'état : hors-ligne et connexion instable",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZB",
+   "type": "ecran",
+   "ecrans": [
+    "ZB-06"
+   ]
+  },
+  {
+   "code": "MOB-ZB-18",
+   "title": "[MOB-ZB-18] Goldens et widgetbook des composants de base",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "tests",
+    "type:tests"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZB",
+   "type": "tests",
+   "ecrans": [
+    "ZB-01",
+    "ZB-02",
+    "ZB-03",
+    "ZB-04",
+    "ZB-05",
+    "ZB-06"
+   ]
+  },
+  {
+   "code": "MOB-ZC-01",
+   "title": "[MOB-ZC-01] BarcaBottomSheet : feuille inférieure 24 px, panneau centré sur tablette",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZC",
+   "type": "ecran",
+   "ecrans": [
+    "ZC-01",
+    "ZD-04"
+   ]
+  },
+  {
+   "code": "MOB-ZC-02",
+   "title": "[MOB-ZC-02] BarcaDialog : modale de confirmation (standard et destructive)",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZC",
+   "type": "ecran",
+   "ecrans": [
+    "ZC-01",
+    "ZE-04"
+   ]
+  },
+  {
+   "code": "MOB-ZC-03",
+   "title": "[MOB-ZC-03] Modale de célébration (déblocage de badge) : hexagone, halo or, confettis",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:L",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZC",
+   "type": "ecran",
+   "ecrans": [
+    "ZC-01",
+    "ZE-01"
+   ]
+  },
+  {
+   "code": "MOB-ZC-04",
+   "title": "[MOB-ZC-04] Service de toasts : succès, erreur, information, admin avec fermeture",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZC",
+   "type": "ecran",
+   "ecrans": [
+    "ZC-01"
+   ]
+  },
+  {
+   "code": "MOB-ZC-05",
+   "title": "[MOB-ZC-05] Infobulle contextuelle et notification in-app (aperçu push)",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "module:notifications",
+    "phase:0",
+    "priorite:P2",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZC",
+   "type": "ecran",
+   "ecrans": [
+    "ZC-01"
+   ]
+  },
+  {
+   "code": "MOB-ZC-06",
+   "title": "[MOB-ZC-06] BarcaLoadingIndicator : spinners, spinner de bouton et points « assistant »",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZC",
+   "type": "ecran",
+   "ecrans": [
+    "ZC-02"
+   ]
+  },
+  {
+   "code": "MOB-ZC-07",
+   "title": "[MOB-ZC-07] Squelettes shimmer : carte, liste, tableau",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "performance",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZC",
+   "type": "ecran",
+   "ecrans": [
+    "ZC-02",
+    "ZE-01"
+   ]
+  },
+  {
+   "code": "MOB-ZC-08",
+   "title": "[MOB-ZC-08] Barres, anneaux et chargeur de marque (génération de wallpaper)",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "module:wallpapers",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZC",
+   "type": "ecran",
+   "ecrans": [
+    "ZC-02"
+   ]
+  },
+  {
+   "code": "MOB-ZC-09",
+   "title": "[MOB-ZC-09] Tirer pour actualiser et chargement paginé",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:fonctionnel",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZC",
+   "type": "fonctionnel",
+   "ecrans": [
+    "ZC-02",
+    "ZE-03"
+   ]
+  },
+  {
+   "code": "MOB-ZC-10",
+   "title": "[MOB-ZC-10] BarcaEmptyState : illustration légère, message et action",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZC",
+   "type": "ecran",
+   "ecrans": [
+    "ZC-03"
+   ]
+  },
+  {
+   "code": "MOB-ZC-11",
+   "title": "[MOB-ZC-11] BarcaErrorState : erreur réseau, serveur, limite de débit",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZC",
+   "type": "ecran",
+   "ecrans": [
+    "ZC-03"
+   ]
+  },
+  {
+   "code": "MOB-ZC-12",
+   "title": "[MOB-ZC-12] Mapping Failure → état d'écran (BarcaErrorState/BarcaEmptyState) et gabarit BlocBuilder",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "module:systeme",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:fonctionnel",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZC",
+   "type": "fonctionnel",
+   "ecrans": [
+    "ZC-03",
+    "ZC-02"
+   ]
+  },
+  {
+   "code": "MOB-ZC-13",
+   "title": "[MOB-ZC-13] États spéciaux : quiz terminé, accès retiré, bientôt disponible",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZC",
+   "type": "ecran",
+   "ecrans": [
+    "ZC-03"
+   ]
+  },
+  {
+   "code": "MOB-ZC-14",
+   "title": "[MOB-ZC-14] Fondation de visualisation de données : bibliothèque, thème et légendes",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "type:infra",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZC",
+   "type": "infra",
+   "ecrans": [
+    "ZC-04"
+   ]
+  },
+  {
+   "code": "MOB-ZC-15",
+   "title": "[MOB-ZC-15] Courbes (avec aire, comparées) et barres (comparatives : possession, tirs, corners)",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZC",
+   "type": "ecran",
+   "ecrans": [
+    "ZC-04"
+   ]
+  },
+  {
+   "code": "MOB-ZC-16",
+   "title": "[MOB-ZC-16] Anneau segmenté, radar GOAT/Academy, carte de chaleur d'activité, mini-courbes",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P2",
+    "taille:L",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZC",
+   "type": "ecran",
+   "ecrans": [
+    "ZC-04"
+   ]
+  },
+  {
+   "code": "MOB-ZC-17",
+   "title": "[MOB-ZC-17] Goldens et widgetbook des retours et états",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:S",
+    "tests",
+    "type:tests"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZC",
+   "type": "tests",
+   "ecrans": [
+    "ZC-01",
+    "ZC-02",
+    "ZC-03",
+    "ZC-04"
+   ]
+  },
+  {
+   "code": "MOB-ZD-01",
+   "title": "[MOB-ZD-01] Cellules d'indice et ligne de tentative de Guess the Player",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "module:jeux",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZD",
+   "type": "ecran",
+   "ecrans": [
+    "ZD-01"
+   ]
+  },
+  {
+   "code": "MOB-ZD-02",
+   "title": "[MOB-ZD-02] Options de réponse du quiz : repos, sélectionnée, bonne, mauvaise, estompée",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "module:jeux",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZD",
+   "type": "ecran",
+   "ecrans": [
+    "ZD-01"
+   ]
+  },
+  {
+   "code": "MOB-ZD-03",
+   "title": "[MOB-ZD-03] Chronomètre, paliers de difficulté et podium",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "module:jeux",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZD",
+   "type": "ecran",
+   "ecrans": [
+    "ZD-01"
+   ]
+  },
+  {
+   "code": "MOB-ZD-04",
+   "title": "[MOB-ZD-04] Terrain Fantasy interactif : emplacements, formations et glisser-déposer",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "module:fantasy",
+    "phase:0",
+    "priorite:P0",
+    "taille:L",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZD",
+   "type": "ecran",
+   "ecrans": [
+    "ZD-01"
+   ]
+  },
+  {
+   "code": "MOB-ZD-05",
+   "title": "[MOB-ZD-05] Marqueurs de carte : clusters, groupes locaux, ma zone floue, contrôles",
+   "labels": [
+    "flutter",
+    "module:carte",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "rgpd",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZD",
+   "type": "ecran",
+   "ecrans": [
+    "ZD-02"
+   ]
+  },
+  {
+   "code": "MOB-ZD-06",
+   "title": "[MOB-ZD-06] Chat Barça AI : bulles, messages d'état et échec d'envoi",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "module:ia",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZD",
+   "type": "ecran",
+   "ecrans": [
+    "ZD-02"
+   ]
+  },
+  {
+   "code": "MOB-ZD-07",
+   "title": "[MOB-ZD-07] Ligne de match, cartes de match et frise chronologique",
+   "labels": [
+    "flutter",
+    "module:calendrier",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZD",
+   "type": "ecran",
+   "ecrans": [
+    "ZD-02"
+   ]
+  },
+  {
+   "code": "MOB-ZD-08",
+   "title": "[MOB-ZD-08] Correspondance des composants admin (ZD-03) et réutilisation côté mobile",
+   "labels": [
+    "documentation",
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P2",
+    "taille:S",
+    "type:doc"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZD",
+   "type": "doc",
+   "ecrans": [
+    "ZD-03"
+   ]
+  },
+  {
+   "code": "MOB-ZD-09",
+   "title": "[MOB-ZD-09] Points de rupture et utilitaires responsive (téléphone, tablette)",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:fonctionnel",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZD",
+   "type": "fonctionnel",
+   "ecrans": [
+    "ZD-04"
+   ]
+  },
+  {
+   "code": "MOB-ZD-10",
+   "title": "[MOB-ZD-10] Recomposition d'écrans : tableau de bord, carte et maître/détail",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:L",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZD",
+   "type": "ecran",
+   "ecrans": [
+    "ZD-04"
+   ]
+  },
+  {
+   "code": "MOB-ZD-11",
+   "title": "[MOB-ZD-11] Cibles tactiles 44 × 44 et espacements minimaux",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "tests",
+    "type:fonctionnel",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZD",
+   "type": "fonctionnel",
+   "ecrans": [
+    "ZD-05"
+   ]
+  },
+  {
+   "code": "MOB-ZD-12",
+   "title": "[MOB-ZD-12] Anneau de focus, sémantique VoiceOver/TalkBack et couleur non exclusive",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "tests",
+    "type:fonctionnel",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZD",
+   "type": "fonctionnel",
+   "ecrans": [
+    "ZD-05",
+    "ZB-01",
+    "ZB-02"
+   ]
+  },
+  {
+   "code": "MOB-ZD-13",
+   "title": "[MOB-ZD-13] Tokens de mouvement AppMotion : durées, courbes et mouvement réduit",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "performance",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:donnees",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZD",
+   "type": "donnees",
+   "ecrans": [
+    "ZD-06",
+    "ZE-01"
+   ]
+  },
+  {
+   "code": "MOB-ZD-14",
+   "title": "[MOB-ZD-14] Micro-interactions clés : validation de quiz, badge, bulle IA, série",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:L",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZD",
+   "type": "ecran",
+   "ecrans": [
+    "ZD-06",
+    "ZE-01"
+   ]
+  },
+  {
+   "code": "MOB-ZE-01",
+   "title": "[MOB-ZE-01] Moteur de chorégraphie : timeline en ms, Interval et décalages",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "performance",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:infra",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZE",
+   "type": "infra",
+   "ecrans": [
+    "ZE-02",
+    "ZE-01"
+   ]
+  },
+  {
+   "code": "MOB-ZE-02",
+   "title": "[MOB-ZE-02] Matrice haptique : retours tactiles par interaction",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:S",
+    "type:fonctionnel",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZE",
+   "type": "fonctionnel",
+   "ecrans": [
+    "ZE-01"
+   ]
+  },
+  {
+   "code": "MOB-ZE-03",
+   "title": "[MOB-ZE-03] Changement d'onglet : capsule glissante et fondu-glissé à axe partagé",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZE",
+   "type": "ecran",
+   "ecrans": [
+    "ZE-01",
+    "ZE-02",
+    "ZB-06"
+   ]
+  },
+  {
+   "code": "MOB-ZE-04",
+   "title": "[MOB-ZE-04] Transitions entre écrans : pile, modal plein écran, axe Z, fondu",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZE",
+   "type": "ecran",
+   "ecrans": [
+    "ZE-02"
+   ]
+  },
+  {
+   "code": "MOB-ZE-05",
+   "title": "[MOB-ZE-05] Chorégraphie de l'accueil à la première ouverture (1 900 ms)",
+   "labels": [
+    "flutter",
+    "module:accueil",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:L",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZE",
+   "type": "ecran",
+   "ecrans": [
+    "ZE-02"
+   ]
+  },
+  {
+   "code": "MOB-ZE-06",
+   "title": "[MOB-ZE-06] Pulsation du compte à rebours du prochain match (700–1 200 ms)",
+   "labels": [
+    "flutter",
+    "module:accueil",
+    "module:design-system",
+    "phase:0",
+    "priorite:P2",
+    "taille:S",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZE",
+   "type": "ecran",
+   "ecrans": [
+    "ZE-02"
+   ]
+  },
+  {
+   "code": "MOB-ZE-07",
+   "title": "[MOB-ZE-07] Bulle IA : apparition, respiration et expansion vers la conversation",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "module:ia",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZE",
+   "type": "ecran",
+   "ecrans": [
+    "ZE-01",
+    "ZE-02"
+   ]
+  },
+  {
+   "code": "MOB-ZE-08",
+   "title": "[MOB-ZE-08] Chorégraphie de victoire à Guess the Player (2 600 ms)",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "module:jeux",
+    "phase:0",
+    "priorite:P1",
+    "taille:L",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZE",
+   "type": "ecran",
+   "ecrans": [
+    "ZE-02",
+    "ZE-01"
+   ]
+  },
+  {
+   "code": "MOB-ZE-09",
+   "title": "[MOB-ZE-09] Chorégraphie de montée de niveau au quiz (2 200 ms)",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "module:jeux",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZE",
+   "type": "ecran",
+   "ecrans": [
+    "ZE-02"
+   ]
+  },
+  {
+   "code": "MOB-ZE-10",
+   "title": "[MOB-ZE-10] Chorégraphie du splash vers l'accueil (1 600 ms)",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "module:systeme",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "type:ecran",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZE",
+   "type": "ecran",
+   "ecrans": [
+    "ZE-02"
+   ]
+  },
+  {
+   "code": "MOB-ZE-11",
+   "title": "[MOB-ZE-11] Zone du pouce : CTA bas, actions secondaires et règles de placement",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:ux",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZE",
+   "type": "ux",
+   "ecrans": [
+    "ZE-03"
+   ]
+  },
+  {
+   "code": "MOB-ZE-12",
+   "title": "[MOB-ZE-12] Gestes : swipe ligne, appui long, pincer/double appui, glisser-déposer, dictée",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:L",
+    "type:fonctionnel",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZE",
+   "type": "fonctionnel",
+   "ecrans": [
+    "ZE-03"
+   ]
+  },
+  {
+   "code": "MOB-ZE-13",
+   "title": "[MOB-ZE-13] Saisie et clavier : CTA au-dessus du clavier, champ défilé, claviers adaptés",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "type:ux",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZE",
+   "type": "ux",
+   "ecrans": [
+    "ZE-04"
+   ]
+  },
+  {
+   "code": "MOB-ZE-14",
+   "title": "[MOB-ZE-14] Texte dynamique jusqu'à 160 % sans coupure de mise en page",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P0",
+    "taille:M",
+    "tests",
+    "type:ux",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZE",
+   "type": "ux",
+   "ecrans": [
+    "ZE-04"
+   ]
+  },
+  {
+   "code": "MOB-ZE-15",
+   "title": "[MOB-ZE-15] Lisibilité plein soleil et mode sombre OLED (#121218)",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:S",
+    "type:ux",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZE",
+   "type": "ux",
+   "ecrans": [
+    "ZE-04"
+   ]
+  },
+  {
+   "code": "MOB-ZE-16",
+   "title": "[MOB-ZE-16] Prévention des erreurs : actions destructives en 3 étapes et annulation",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "rgpd",
+    "taille:M",
+    "type:fonctionnel",
+    "ux-ui"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZE",
+   "type": "fonctionnel",
+   "ecrans": [
+    "ZE-04"
+   ]
+  },
+  {
+   "code": "MOB-ZE-17",
+   "title": "[MOB-ZE-17] Budget de performance des animations : 60 fps / 120 Hz et mouvement réduit",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "performance",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "type:performance"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZE",
+   "type": "performance",
+   "ecrans": [
+    "ZE-01",
+    "ZE-02"
+   ]
+  },
+  {
+   "code": "MOB-ZE-18",
+   "title": "[MOB-ZE-18] Goldens d'images clés et tests de séquences d'animation",
+   "labels": [
+    "flutter",
+    "module:design-system",
+    "phase:0",
+    "priorite:P1",
+    "taille:M",
+    "tests",
+    "type:tests"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "epic": "MOB-ZE",
+   "type": "tests",
+   "ecrans": [
+    "ZE-01",
+    "ZE-02",
+    "ZE-03",
+    "ZE-04"
+   ]
   }
  ],
  "epics": [
@@ -8085,6 +12299,94 @@
     "MOB-C-25",
     "MOB-C-26",
     "MOB-C-27"
+   ]
+  },
+  {
+   "code": "MOB-D",
+   "title": "[MOB-D] Épopée — Jeux — Guess the Player",
+   "labels": [
+    "epic",
+    "flutter",
+    "phase:1"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "children": [
+    "MOB-D-01",
+    "MOB-D-02",
+    "MOB-D-03",
+    "MOB-D-04",
+    "MOB-D-05",
+    "MOB-D-06",
+    "MOB-D-07",
+    "MOB-D-08",
+    "MOB-D-09",
+    "MOB-D-10",
+    "MOB-D-11",
+    "MOB-D-12",
+    "MOB-D-13",
+    "MOB-D-14",
+    "MOB-D-15",
+    "MOB-D-16",
+    "MOB-D-17",
+    "MOB-D-18",
+    "MOB-D-19",
+    "MOB-D-20",
+    "MOB-D-21",
+    "MOB-D-22",
+    "MOB-D-23",
+    "MOB-D-24",
+    "MOB-D-25",
+    "MOB-D-26",
+    "MOB-D-27",
+    "MOB-D-28",
+    "MOB-D-29",
+    "MOB-D-30"
+   ]
+  },
+  {
+   "code": "MOB-E",
+   "title": "[MOB-E] Épopée — Quiz adaptatif",
+   "labels": [
+    "epic",
+    "flutter",
+    "phase:1"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "children": [
+    "MOB-E-01",
+    "MOB-E-02",
+    "MOB-E-03",
+    "MOB-E-04",
+    "MOB-E-05",
+    "MOB-E-06",
+    "MOB-E-07",
+    "MOB-E-08",
+    "MOB-E-09",
+    "MOB-E-10",
+    "MOB-E-11",
+    "MOB-E-12",
+    "MOB-E-13",
+    "MOB-E-14",
+    "MOB-E-15",
+    "MOB-E-16",
+    "MOB-E-17",
+    "MOB-E-18",
+    "MOB-E-19",
+    "MOB-E-20",
+    "MOB-E-21",
+    "MOB-E-22",
+    "MOB-E-23",
+    "MOB-E-24",
+    "MOB-E-25",
+    "MOB-E-26",
+    "MOB-E-27",
+    "MOB-E-28",
+    "MOB-E-29",
+    "MOB-E-30",
+    "MOB-E-31",
+    "MOB-E-32",
+    "MOB-E-33",
+    "MOB-E-34"
    ]
   },
   {
@@ -8505,6 +12807,46 @@
    ]
   },
   {
+   "code": "MOB-O",
+   "title": "[MOB-O] Épopée — Notifications",
+   "labels": [
+    "epic",
+    "flutter",
+    "phase:1"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "children": [
+    "MOB-O-01",
+    "MOB-O-02",
+    "MOB-O-03",
+    "MOB-O-04",
+    "MOB-O-05",
+    "MOB-O-06",
+    "MOB-O-07",
+    "MOB-O-08",
+    "MOB-O-09",
+    "MOB-O-10",
+    "MOB-O-11",
+    "MOB-O-12",
+    "MOB-O-13",
+    "MOB-O-14",
+    "MOB-O-15",
+    "MOB-O-16",
+    "MOB-O-17",
+    "MOB-O-18",
+    "MOB-O-19",
+    "MOB-O-20",
+    "MOB-O-21",
+    "MOB-O-22",
+    "MOB-O-23",
+    "MOB-O-24",
+    "MOB-O-25",
+    "MOB-O-26",
+    "MOB-O-27",
+    "MOB-O-28"
+   ]
+  },
+  {
    "code": "MOB-P",
    "title": "[MOB-P] Épopée — Culé Passport",
    "labels": [
@@ -8535,6 +12877,192 @@
     "MOB-P-19",
     "MOB-P-20",
     "MOB-P-21"
+   ]
+  },
+  {
+   "code": "MOB-Q",
+   "title": "[MOB-Q] Épopée — Paramètres et compte",
+   "labels": [
+    "epic",
+    "flutter",
+    "phase:1"
+   ],
+   "milestone": "Phase 1 — MVP",
+   "children": [
+    "MOB-Q-01",
+    "MOB-Q-02",
+    "MOB-Q-03",
+    "MOB-Q-04",
+    "MOB-Q-05",
+    "MOB-Q-06",
+    "MOB-Q-07",
+    "MOB-Q-08",
+    "MOB-Q-09",
+    "MOB-Q-10",
+    "MOB-Q-11",
+    "MOB-Q-12",
+    "MOB-Q-13",
+    "MOB-Q-14",
+    "MOB-Q-15",
+    "MOB-Q-16",
+    "MOB-Q-17",
+    "MOB-Q-18",
+    "MOB-Q-19",
+    "MOB-Q-20",
+    "MOB-Q-21",
+    "MOB-Q-22",
+    "MOB-Q-23",
+    "MOB-Q-24",
+    "MOB-Q-25",
+    "MOB-Q-26",
+    "MOB-Q-27",
+    "MOB-Q-28",
+    "MOB-Q-29",
+    "MOB-Q-30",
+    "MOB-Q-31"
+   ]
+  },
+  {
+   "code": "MOB-ZA",
+   "title": "[MOB-ZA] Épopée — Fondations",
+   "labels": [
+    "epic",
+    "flutter",
+    "phase:0"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "children": [
+    "MOB-ZA-01",
+    "MOB-ZA-02",
+    "MOB-ZA-03",
+    "MOB-ZA-04",
+    "MOB-ZA-05",
+    "MOB-ZA-06",
+    "MOB-ZA-07",
+    "MOB-ZA-08",
+    "MOB-ZA-09",
+    "MOB-ZA-10",
+    "MOB-ZA-11",
+    "MOB-ZA-12",
+    "MOB-ZA-13",
+    "MOB-ZA-14",
+    "MOB-ZA-15",
+    "MOB-ZA-16"
+   ]
+  },
+  {
+   "code": "MOB-ZB",
+   "title": "[MOB-ZB] Épopée — Composants de base",
+   "labels": [
+    "epic",
+    "flutter",
+    "phase:0"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "children": [
+    "MOB-ZB-01",
+    "MOB-ZB-02",
+    "MOB-ZB-03",
+    "MOB-ZB-04",
+    "MOB-ZB-05",
+    "MOB-ZB-06",
+    "MOB-ZB-07",
+    "MOB-ZB-08",
+    "MOB-ZB-09",
+    "MOB-ZB-10",
+    "MOB-ZB-11",
+    "MOB-ZB-12",
+    "MOB-ZB-13",
+    "MOB-ZB-14",
+    "MOB-ZB-15",
+    "MOB-ZB-16",
+    "MOB-ZB-17",
+    "MOB-ZB-18"
+   ]
+  },
+  {
+   "code": "MOB-ZC",
+   "title": "[MOB-ZC] Épopée — Retours et états",
+   "labels": [
+    "epic",
+    "flutter",
+    "phase:0"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "children": [
+    "MOB-ZC-01",
+    "MOB-ZC-02",
+    "MOB-ZC-03",
+    "MOB-ZC-04",
+    "MOB-ZC-05",
+    "MOB-ZC-06",
+    "MOB-ZC-07",
+    "MOB-ZC-08",
+    "MOB-ZC-09",
+    "MOB-ZC-10",
+    "MOB-ZC-11",
+    "MOB-ZC-12",
+    "MOB-ZC-13",
+    "MOB-ZC-14",
+    "MOB-ZC-15",
+    "MOB-ZC-16",
+    "MOB-ZC-17"
+   ]
+  },
+  {
+   "code": "MOB-ZD",
+   "title": "[MOB-ZD] Épopée — Composants métier et responsive",
+   "labels": [
+    "epic",
+    "flutter",
+    "phase:0"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "children": [
+    "MOB-ZD-01",
+    "MOB-ZD-02",
+    "MOB-ZD-03",
+    "MOB-ZD-04",
+    "MOB-ZD-05",
+    "MOB-ZD-06",
+    "MOB-ZD-07",
+    "MOB-ZD-08",
+    "MOB-ZD-09",
+    "MOB-ZD-10",
+    "MOB-ZD-11",
+    "MOB-ZD-12",
+    "MOB-ZD-13",
+    "MOB-ZD-14"
+   ]
+  },
+  {
+   "code": "MOB-ZE",
+   "title": "[MOB-ZE] Épopée — Animations et micro-interactions",
+   "labels": [
+    "epic",
+    "flutter",
+    "phase:0"
+   ],
+   "milestone": "Phase 0 — Socle technique",
+   "children": [
+    "MOB-ZE-01",
+    "MOB-ZE-02",
+    "MOB-ZE-03",
+    "MOB-ZE-04",
+    "MOB-ZE-05",
+    "MOB-ZE-06",
+    "MOB-ZE-07",
+    "MOB-ZE-08",
+    "MOB-ZE-09",
+    "MOB-ZE-10",
+    "MOB-ZE-11",
+    "MOB-ZE-12",
+    "MOB-ZE-13",
+    "MOB-ZE-14",
+    "MOB-ZE-15",
+    "MOB-ZE-16",
+    "MOB-ZE-17",
+    "MOB-ZE-18"
    ]
   }
  ],
