@@ -49,6 +49,11 @@ updates:
     labels: ["dependabot", "flutter", "dependencies"]
     commit-message:
       prefix: "build(android)"
+    ignore:
+      # Toolchain Android piloté par Flutter 3.47.7 : montées de version via la mise à jour de Flutter
+      - dependency-name: "org.jetbrains.kotlin.android"
+      - dependency-name: "com.android.application"
+      - dependency-name: "dev.flutter.*"
 
   - package-ecosystem: "npm"
     directory: "/"
