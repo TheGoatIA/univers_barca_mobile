@@ -137,6 +137,7 @@ Version d'app = `pubspec.yaml` (`--build-name`), numéro de build = numéro d'ex
 | Document | Contenu |
 | --- | --- |
 | [Index de la documentation](docs/architecture/README.md) | Point d'entrée : par où commencer selon votre rôle |
+| [Registre des décisions](docs/DECISIONS.md) | Décisions D01–D19 et incohérences tranchées |
 | [Vue d'ensemble de l'architecture](docs/architecture/01-vue-ensemble.md) | Architecture globale, conteneurs, couches, carte des fonctionnalités |
 | [Architecture de données](docs/architecture/02-architecture-donnees.md) | Collections, relations, index, Redis, Drift, cycle de vie |
 | [Sécurité et RGPD](docs/architecture/03-securite-et-rgpd.md) | Authentification, RBAC, protection des données |

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <clipPath id="s"><path d="M512 96 C650 150 760 160 864 150 V520 C864 720 720 860 512 944 C304 860 160 720 160 520 V150 C264 160 374 150 512 96 Z"/></clipPath>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F6D04D"/><stop offset="1" stop-color="#EDBB00"/></linearGradient>
+  </defs>
+  <path d="M512 72 C656 130 772 142 888 130 V520 C888 740 736 884 512 976 C288 884 136 740 136 520 V130 C252 142 368 130 512 72 Z" fill="url(#g)"/>
+  <g clip-path="url(#s)">
+    <rect x="160" y="60" width="704" height="900" fill="#004D98"/>
+    <g fill="#A50044">
+      <rect x="160" y="60" width="117" height="900"/><rect x="394" y="60" width="117" height="900"/><rect x="628" y="60" width="117" height="900"/>
+    </g>
+    <rect x="160" y="130" width="704" height="230" fill="#0B1F4D" opacity=".92"/>
+    <circle cx="512" cy="640" r="150" fill="#fff" opacity=".95"/>
+    <path d="M512 500 l55 40 -21 64 h-68 l-21 -64 z M446 604 l-62 18 M578 604 l62 18 M492 668 l-24 58 M532 668 l24 58" stroke="#0B1F4D" stroke-width="12" fill="#0B1F4D" stroke-linejoin="round"/>
+  </g>
+  <text x="512" y="300" text-anchor="middle" font-family="DejaVu Sans, Arial, sans-serif" font-weight="800" font-size="190" letter-spacing="8" fill="#EDBB00">UB</text>
+</svg>

@@ -7,3 +7,8 @@
 - Les données statistiques et factuelles proviennent de sources sous licence d'usage
   (API football) ou de contenus éditoriaux originaux rédigés pour l'application.
 - Les licences des dépendances tierces sont listées dans `THIRD_PARTY_LICENSES.md`.
+
+
+## Logo de substitution
+
+En l'absence d'autorisation écrite du FC Barcelone, un **logo original** (écu « UB » aux couleurs de l'application) est fourni dans `docs/assets/logo-alt/` (source vectorielle `logo.svg`). Pour l'appliquer : `scripts/use-alt-logo.sh` (puis vérifier le diff des icônes natives). Registre des décisions : [`docs/DECISIONS.md`](docs/DECISIONS.md).
