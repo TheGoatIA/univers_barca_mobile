@@ -20,8 +20,9 @@ class AppColors {
   );
 
   // --- Mode Clair ---
-  static const Color background = Color(0xFFF7F7F9);
-  static const Color surface = Color(0xFFFFFFFF);
+  // D16 / planche ZA-02 : fond blanc, surfaces #F7F7F9 (inversé auparavant).
+  static const Color background = Color(0xFFFFFFFF);
+  static const Color surface = Color(0xFFF7F7F9);
   static const Color onBackground = Color(0xFF1A1A2E);
   static const Color onSurface = Color(0xFF1A1A2E);
   static const Color outline = Color(0xFFE6E6EC);
@@ -39,6 +40,20 @@ class AppColors {
   static const Color warning = Color(0xFFE0A400);
   static const Color error = Color(0xFFD64545);
   static const Color info = Color(0xFF004D98);
+
+  // --- Sémantiques Mode Sombre ---
+  static const Color successDark = Color(0xFF3CBE82);
+  static const Color warningDark = Color(0xFFF0C24B);
+  static const Color errorDark = Color(0xFFE86C6C);
+
+  // --- Noms du CDC Flutter §9.2 (alias) ---
+  static const Color colorPrimary = primary;
+  static const Color colorSecondary = secondary;
+  static const Color colorAccent = accent;
+  static const Color colorBackground = background;
+  static const Color colorSurface = surface;
+  static const Color colorTextPrimary = textPrimary;
+  static const Color colorTextSecondary = textSecondary;
 
   // --- Texte Mode Clair ---
   static const Color textPrimary = Color(0xFF1A1A2E);

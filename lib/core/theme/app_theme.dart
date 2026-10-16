@@ -23,7 +23,7 @@ class AppTheme {
         tertiary: AppColors.accent,
         surface: AppColors.surface,
         onSurface: AppColors.onSurface,
-        surfaceContainerHighest: AppColors.background,
+        surfaceContainerHighest: AppColors.surface,
         onSurfaceVariant: AppColors.textSecondary,
         outline: AppColors.outline,
         error: AppColors.error,
@@ -32,7 +32,7 @@ class AppTheme {
       scaffoldBackgroundColor: AppColors.background,
       textTheme: textTheme,
       appBarTheme: const AppBarTheme(
-        backgroundColor: AppColors.surface,
+        backgroundColor: AppColors.background,
         foregroundColor: AppColors.onBackground,
         elevation: 0,
         scrolledUnderElevation: 0,
@@ -46,7 +46,7 @@ class AppTheme {
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
       ),
       navigationBarTheme: NavigationBarThemeData(
-        backgroundColor: AppColors.surface,
+        backgroundColor: AppColors.background,
         indicatorColor: AppColors.primary.withValues(alpha: 0.1),
         labelTextStyle: WidgetStateProperty.all(
           TextStyle(
@@ -68,7 +68,7 @@ class AppTheme {
       ),
       inputDecorationTheme: InputDecorationTheme(
         filled: true,
-        fillColor: const Color(0xFFF3F4F6),
+        fillColor: AppColors.surface,
         contentPadding: const EdgeInsets.all(16),
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
@@ -102,15 +102,15 @@ class AppTheme {
       colorScheme: const ColorScheme.dark(
         primary: AppColors.primaryDarkTheme,
         onPrimary: AppColors.backgroundDark,
-        secondary: AppColors.secondary,
+        secondary: AppColors.secondaryLight,
         onSecondary: Colors.white,
         tertiary: AppColors.accent,
         surface: AppColors.surfaceDark,
         onSurface: AppColors.onSurfaceDark,
         surfaceContainerHighest: AppColors.backgroundDark,
-        onSurfaceVariant: AppColors.onSurfaceDark,
+        onSurfaceVariant: AppColors.textSecondaryDark,
         outline: AppColors.outlineDark,
-        error: AppColors.error,
+        error: AppColors.errorDark,
         onError: Colors.white,
       ),
       scaffoldBackgroundColor: AppColors.backgroundDark,
@@ -171,7 +171,7 @@ class AppTheme {
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(12),
-          borderSide: const BorderSide(color: AppColors.error),
+          borderSide: const BorderSide(color: AppColors.errorDark),
         ),
       ),
     );

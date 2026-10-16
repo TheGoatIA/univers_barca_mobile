@@ -21,6 +21,16 @@ import 'package:shared_preferences/shared_preferences.dart' as _i460;
 import 'package:univers_barca/core/network/network_info.dart' as _i1002;
 import 'package:univers_barca/core/services/notification_service.dart' as _i904;
 import 'package:univers_barca/di/register_module.dart' as _i711;
+import 'package:univers_barca/features/account/data/datasources/account_remote_datasource.dart'
+    as _i12;
+import 'package:univers_barca/features/account/data/repositories/account_repository_impl.dart'
+    as _i913;
+import 'package:univers_barca/features/account/domain/repositories/account_repository.dart'
+    as _i430;
+import 'package:univers_barca/features/account/domain/usecases/delete_account_usecase.dart'
+    as _i768;
+import 'package:univers_barca/features/account/presentation/bloc/delete_account_bloc.dart'
+    as _i286;
 import 'package:univers_barca/features/players/data/datasources/players_remote_datasource.dart'
     as _i548;
 import 'package:univers_barca/features/players/data/repositories/players_repository_impl.dart'
@@ -55,11 +65,20 @@ extension GetItInjectableX on _i174.GetIt {
     gh.lazySingleton<_i973.InternetConnectionChecker>(
       () => registerModule.connectionChecker,
     );
+    gh.lazySingleton<_i12.AccountRemoteDataSource>(
+      () => _i12.AccountRemoteDataSource(gh<_i31.ChopperClient>()),
+    );
     gh.lazySingleton<_i548.PlayersRemoteDataSource>(
       () => _i548.PlayersRemoteDataSource(gh<_i31.ChopperClient>()),
     );
     gh.lazySingleton<_i1002.NetworkInfo>(
       () => _i1002.NetworkInfoImpl(gh<_i973.InternetConnectionChecker>()),
+    );
+    gh.lazySingleton<_i430.AccountRepository>(
+      () => _i913.AccountRepositoryImpl(
+        gh<_i12.AccountRemoteDataSource>(),
+        gh<_i1002.NetworkInfo>(),
+      ),
     );
     gh.lazySingleton<_i822.PlayersRepository>(
       () => _i5.PlayersRepositoryImpl(
@@ -72,6 +91,12 @@ extension GetItInjectableX on _i174.GetIt {
     );
     gh.factory<_i417.PlayersBloc>(
       () => _i417.PlayersBloc(gh<_i851.GetPlayersUseCase>()),
+    );
+    gh.lazySingleton<_i768.DeleteAccountUseCase>(
+      () => _i768.DeleteAccountUseCase(gh<_i430.AccountRepository>()),
+    );
+    gh.factory<_i286.DeleteAccountBloc>(
+      () => _i286.DeleteAccountBloc(gh<_i768.DeleteAccountUseCase>()),
     );
     return this;
   }

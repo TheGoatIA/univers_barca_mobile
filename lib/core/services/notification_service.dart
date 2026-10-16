@@ -12,8 +12,7 @@ class NotificationService {
   final FlutterLocalNotificationsPlugin _localNotifications = FlutterLocalNotificationsPlugin();
 
   Future<void> initialize() async {
-    // Demande de permission
-    await _messaging.requestPermission(alert: true, badge: true, sound: true);
+    // D13 : la permission push n'est JAMAIS demandée ici (lancement). Voir requestPermission().
 
     // Configuration des notifications locales Android
     const androidSettings = AndroidInitializationSettings('@mipmap/ic_launcher');
@@ -25,6 +24,13 @@ class NotificationService {
     FirebaseMessaging.onMessage.listen(_handleForegroundMessage);
 
     // Abonnement aux topics et stockage du jeton FCM : voir issue « Notifications push ».
+  }
+
+  /// D13 : à appeler uniquement après l'écran de pré-permission (B-15), jamais au lancement.
+  Future<bool> requestPermission() async {
+    final settings = await _messaging.requestPermission(alert: true, badge: true, sound: true);
+    return settings.authorizationStatus == AuthorizationStatus.authorized ||
+        settings.authorizationStatus == AuthorizationStatus.provisional;
   }
 
   Future<String?> getToken() => _messaging.getToken();
