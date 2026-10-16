@@ -84,7 +84,8 @@ class AppLocalizationsEs extends AppLocalizations {
   String get errors_validation => 'Comprueba los datos introducidos.';
 
   @override
-  String get errors_session_expired => 'Sesión caducada. Vuelve a iniciar sesión.';
+  String get errors_session_expired =>
+      'Sesión caducada. Vuelve a iniciar sesión.';
 
   @override
   String get navigation_home => 'Inicio';
