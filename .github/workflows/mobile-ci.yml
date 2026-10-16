@@ -17,7 +17,7 @@ jobs:
     name: Qualité (format, analyse)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.47.7'
@@ -37,10 +37,10 @@ jobs:
     if: github.actor != 'dependabot[bot]'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: "22"
       - name: commitlint
@@ -51,7 +51,7 @@ jobs:
     runs-on: ubuntu-latest
     needs: code-quality
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.47.7'
@@ -59,7 +59,7 @@ jobs:
           cache: true
       - run: flutter pub get
       - name: Cache build_runner
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: .dart_tool/build
           key: build-runner-${{ runner.os }}-${{ hashFiles('pubspec.lock') }}-${{ hashFiles('lib/**/*.dart') }}
@@ -78,7 +78,7 @@ jobs:
           print(f'Couverture : {pct} % ({len(da)} lignes instrumentées)')
           sys.exit(0 if pct >= 60 else 1)
           PY
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         if: always()
         with:
           name: coverage
@@ -90,8 +90,8 @@ jobs:
     runs-on: ubuntu-latest
     needs: tests
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: "17"
@@ -103,7 +103,7 @@ jobs:
           cache: true
       - run: flutter pub get
       - name: Cache build_runner
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: .dart_tool/build
           key: build-runner-${{ runner.os }}-${{ hashFiles('pubspec.lock') }}-${{ hashFiles('lib/**/*.dart') }}
@@ -112,7 +112,7 @@ jobs:
       - run: dart run build_runner build --delete-conflicting-outputs
       - run: cp .env.example .env
       - run: flutter build apk --debug --dart-define=APP_ENV=development
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v7
         with:
           name: debug-apk
           path: build/app/outputs/flutter-apk/app-debug.apk
@@ -123,7 +123,7 @@ jobs:
     runs-on: macos-latest
     needs: tests
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - uses: subosito/flutter-action@v2
         with:
           flutter-version: '3.47.7'
@@ -131,13 +131,13 @@ jobs:
           cache: true
       - run: flutter pub get
       - name: Cache CocoaPods
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: ios/Pods
           key: pods-${{ runner.os }}-${{ hashFiles('pubspec.lock', 'ios/Podfile') }}
           restore-keys: pods-${{ runner.os }}-
       - name: Cache build_runner
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         with:
           path: .dart_tool/build
           key: build-runner-${{ runner.os }}-${{ hashFiles('pubspec.lock') }}-${{ hashFiles('lib/**/*.dart') }}
@@ -151,7 +151,7 @@ jobs:
     name: Sécurité (secrets, vulnérabilités)
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           fetch-depth: 0
       - name: TruffleHog (secrets)
