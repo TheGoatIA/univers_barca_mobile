@@ -51,7 +51,7 @@ dependencies:
 
   # === UI & DESIGN ===
   google_fonts: ^8.0.1
-  flutter_svg: ^2.2.3
+  flutter_svg: ^2.3.2
   cached_network_image: ^3.4.1
   lottie: ^3.3.2
   animations: ^2.1.1
